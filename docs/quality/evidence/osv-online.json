@@ -1,0 +1,34 @@
+{
+  "command": [
+    "C:\\Users\\ESTADISTICA\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\python.exe",
+    "kit.py",
+    "--root",
+    "C:\\jimdev\\team-pallaquino\\validation\\osv-fixture",
+    "dependency",
+    "--online"
+  ],
+  "returncode": 1,
+  "expected": 1,
+  "stderr": "",
+  "result": {
+    "at": "2026-10-21T13:54:01+00:00",
+    "online": true,
+    "checks": [
+      {
+        "name": "PyYAML",
+        "version": "5.3",
+        "ecosystem": "PyPI",
+        "status": "queried",
+        "vulnerabilities": [
+          "GHSA-6757-jp84-gxfx",
+          "GHSA-8q59-q68h-6hv4",
+          "PYSEC-2020-96",
+          "PYSEC-2021-142"
+        ]
+      }
+    ],
+    "unresolved": [],
+    "errors": [],
+    "coverage": "Versiones exactas PyPI y package-lock npm v2/v3. No instala ni ejecuta paquetes. Metadatos de paquetes se envían a OSV solo con --online."
+  }
+}

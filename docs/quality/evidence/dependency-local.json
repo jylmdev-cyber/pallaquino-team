@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:\\Users\\ESTADISTICA\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\python.exe",
+    "kit.py",
+    "dependency"
+  ],
+  "returncode": 0,
+  "expected": 0,
+  "stderr": "",
+  "result": {
+    "at": "2026-10-21T13:54:00+00:00",
+    "online": false,
+    "checks": [],
+    "unresolved": [],
+    "errors": [],
+    "coverage": "Versiones exactas PyPI y package-lock npm v2/v3. No instala ni ejecuta paquetes. Metadatos de paquetes se envían a OSV solo con --online."
+  }
+}

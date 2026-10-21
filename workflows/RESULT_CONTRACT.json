@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AgentResult",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "task_id",
+    "summary",
+    "artifacts",
+    "checks",
+    "risks",
+    "next_actions"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "pattern": "^T[0-9]{4,}$"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "command",
+          "returncode",
+          "evidence"
+        ],
+        "properties": {
+          "command": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "returncode": {
+            "type": "integer"
+          },
+          "evidence": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "next_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

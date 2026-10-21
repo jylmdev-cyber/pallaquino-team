@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "classifiers": [
+    ["migration", ["migrar", "migracion", "migracion de datos", "modernizar", "migration", "migrate"]],
+    ["audit", ["auditar", "auditoria", "audit"]],
+    ["docs", ["documentar", "documentacion", "manual", "readme", "documentation", "docs"]],
+    ["fix", ["corregir", "error", "bug", "fix", "reparar"]],
+    ["new", ["nuevo sistema", "desde cero", "new system"]]
+  ],
+  "kinds": {
+    "docs": [["documentation-engineer", 100]],
+    "audit": [["git-auditor", 100], ["security-engineer", 90]],
+    "fix": [["maintenance-engineer", 70], ["qa-engineer", 85]],
+    "feature": [["tech-lead", 60], ["qa-engineer", 85]],
+    "new": [["product-owner", 85], ["solution-architect", 95], ["qa-engineer", 80]],
+    "migration": [["migration-engineer", 100], ["qa-engineer", 90]]
+  },
+  "signals": [
+    {"role": "frontend-engineer", "score": 100, "terms": ["frontend", "interfaz", "boton", "pantalla", "css", "react", "ui"]},
+    {"role": "backend-engineer", "score": 100, "terms": ["backend", "api", "endpoint", "servicio", "servidor"]},
+    {"role": "database-architect", "score": 95, "terms": ["base de datos", "sql", "esquema", "database", "postgresql"]},
+    {"role": "security-engineer", "score": 110, "terms": ["autenticacion", "autorizacion", "permisos", "credenciales", "pagos", "seguridad", "authentication", "security"]},
+    {"role": "devops-engineer", "score": 100, "terms": ["pipeline", "ci/cd", "docker", "despliegue", "infraestructura", "deploy"]}
+  ],
+  "path_signals": [
+    {"role": "frontend-engineer", "score": 95, "suffixes": [".tsx", ".jsx", ".css", ".html", ".vue"]},
+    {"role": "database-architect", "score": 95, "suffixes": [".sql"]}
+  ],
+  "execution_order": ["orchestrator", "product-owner", "business-analyst", "solution-architect", "tech-lead", "security-engineer", "database-architect", "ux-ui-designer", "migration-engineer", "frontend-engineer", "backend-engineer", "maintenance-engineer", "integration-engineer", "ai-engineer", "devops-engineer", "sre-engineer", "performance-engineer", "git-auditor", "qa-engineer", "documentation-engineer", "release-manager"]
+}

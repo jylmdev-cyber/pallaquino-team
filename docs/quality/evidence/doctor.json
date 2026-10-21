@@ -1,0 +1,21 @@
+{
+  "command": [
+    "C:\\Users\\ESTADISTICA\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\python.exe",
+    "kit.py",
+    "doctor"
+  ],
+  "returncode": 0,
+  "expected": 0,
+  "stderr": "",
+  "result": {
+    "python": "3.12.10",
+    "python_supported": true,
+    "platform": "win32",
+    "git": "C:\\Program Files\\Git\\cmd\\git.EXE",
+    "kit": "C:\\jimdev\\team-pallaquino\\UNIVERSAL-AI-SOFTWARE-KIT",
+    "root_exists": true,
+    "memory": true,
+    "dependencies": "Solo biblioteca estándar; instalación opcional con pip.",
+    "network": "No comprobada; comandos online requieren selección explícita."
+  }
+}

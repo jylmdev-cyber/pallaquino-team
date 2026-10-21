@@ -1,0 +1,152 @@
+{
+  "build": {
+    "command": [
+      "C:\\Users\\ESTADISTICA\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\python.exe",
+      "-m",
+      "pip",
+      "wheel",
+      ".",
+      "--no-deps",
+      "--wheel-dir",
+      "C:\\jimdev\\team-pallaquino\\validation\\uasek-110-9gyvr9y0\\wheels"
+    ],
+    "returncode": 0,
+    "stdout": "Processing .\\.\n  Installing build dependencies: started\n  Installing build dependencies: finished with status 'done'\n  Getting requirements to build wheel: started\n  Getting requirements to build wheel: finished with status 'done'\n  Preparing metadata (pyproject.toml): started\n  Preparing metadata (pyproject.toml): finished with status 'done'\nBuilding wheels for collected packages: universal-ai-software-kit\n  Building wheel for universal-ai-software-kit (pyproject.toml): started\n  Building wheel for universal-ai-software-kit (pyproject.toml): finished with status 'done'\n  Created wheel for universal-ai-software-kit: filename=universal_ai_software_kit-1.1.0-py3-none-any.whl size=137927 sha256=6caf38e3a638e63981689385919a2d3699cdd60d246cff8e3c3b424f3fcc56d6\n  Stored in directory: C:\\Users\\ESTADISTICA\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-day_klrh\\wheels\\cb\\7b\\57\\5ed3146dbb93cffe1834312b1bc6f9416f349a555af23d154d\nSuccessfully built universal-ai-software-kit\n",
+    "stderr": ""
+  },
+  "install": {
+    "command": [
+      "C:\\jimdev\\team-pallaquino\\validation\\venv\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "install",
+      "--no-deps",
+      "C:\\jimdev\\team-pallaquino\\validation\\uasek-110-9gyvr9y0\\wheels\\universal_ai_software_kit-1.1.0-py3-none-any.whl"
+    ],
+    "returncode": 0,
+    "stdout": "Processing c:\\jimdev\\team-pallaquino\\validation\\uasek-110-9gyvr9y0\\wheels\\universal_ai_software_kit-1.1.0-py3-none-any.whl\nInstalling collected packages: universal-ai-software-kit\n  Attempting uninstall: universal-ai-software-kit\n    Found existing installation: universal-ai-software-kit 1.0.0\n    Uninstalling universal-ai-software-kit-1.0.0:\n      Successfully uninstalled universal-ai-software-kit-1.0.0\nSuccessfully installed universal-ai-software-kit-1.1.0\n",
+    "stderr": "\n[notice] A new release of pip is available: 25.0.1 -> 26.2.2\n[notice] To update, run: C:\\jimdev\\team-pallaquino\\validation\\venv\\Scripts\\python.exe -m pip install --upgrade pip\n"
+  },
+  "checks": [
+    {
+      "command": [
+        "C:\\jimdev\\team-pallaquino\\validation\\venv\\Scripts\\uasek.exe",
+        "init",
+        "--destination",
+        "C:\\jimdev\\team-pallaquino\\validation\\uasek-110-9gyvr9y0\\installed-project",
+        "--name",
+        "Installed 1.1"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"destination\": \"C:\\\\jimdev\\\\team-pallaquino\\\\validation\\\\uasek-110-9gyvr9y0\\\\installed-project\",\n  \"name\": \"Installed 1.1\",\n  \"template\": null,\n  \"dry_run\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\jimdev\\team-pallaquino\\validation\\venv\\Scripts\\uasek.exe",
+        "--root",
+        "C:\\jimdev\\team-pallaquino\\validation\\uasek-110-9gyvr9y0\\installed-project",
+        "orchestrate",
+        "--request",
+        "Documentar README",
+        "--apply"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"plan\": {\n    \"format\": \"uasek.orchestration-plan\",\n    \"format_version\": 1,\n    \"request\": \"Documentar README\",\n    \"kind\": \"docs\",\n    \"max_roles\": 4,\n    \"steps\": [\n      {\n        \"step\": 1,\n        \"role\": \"documentation-engineer\",\n        \"reasons\": [\n          \"Trabajo de tipo docs\"\n        ],\n        \"title\": \"Documentation Engineer: Documentar README\",\n        \"acceptance\": \"Enlaces resuelven y ejemplos de CLI se ejecutan en entorno aislado. Resultado esperado: Documentar README\",\n        \"depends_on_steps\": [],\n        \"files_in_scope\": [],\n        \"authorization_required\": false\n      }\n    ],\n    \"deferred_roles\": [],\n    \"execution_policy\": {\n      \"max_parallel\": 1,\n      \"model_calls\": 0,\n      \"conflicts\": \"Secuencial por defecto; no hay escritores simultáneos ni modelos invocados por el planificador.\",\n      \"review\": \"Revisar roles diferidos y criterios antes de implementar. Ningún plan autoriza auditorías, producción o efectos externos.\"\n    },\n    \"id\": \"PLAN-2d1f0b2e30ab7100\"\n  },\n  \"application\": {\n    \"plan_id\": \"PLAN-2d1f0b2e30ab7100\",\n    \"task_ids\": [\n      \"T0001\"\n    ],\n    \"checkpoint\": \"CP-20261021T141528453121Z-0a9c0f4a\",\n    \"already_applied\": false,\n    \"dry_run\": false\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\jimdev\\team-pallaquino\\validation\\venv\\Scripts\\uasek.exe",
+        "--root",
+        "C:\\jimdev\\team-pallaquino\\validation\\uasek-110-9gyvr9y0\\installed-project",
+        "orchestrate",
+        "--request",
+        "Documentar README",
+        "--apply"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"plan\": {\n    \"format\": \"uasek.orchestration-plan\",\n    \"format_version\": 1,\n    \"request\": \"Documentar README\",\n    \"kind\": \"docs\",\n    \"max_roles\": 4,\n    \"steps\": [\n      {\n        \"step\": 1,\n        \"role\": \"documentation-engineer\",\n        \"reasons\": [\n          \"Trabajo de tipo docs\"\n        ],\n        \"title\": \"Documentation Engineer: Documentar README\",\n        \"acceptance\": \"Enlaces resuelven y ejemplos de CLI se ejecutan en entorno aislado. Resultado esperado: Documentar README\",\n        \"depends_on_steps\": [],\n        \"files_in_scope\": [],\n        \"authorization_required\": false\n      }\n    ],\n    \"deferred_roles\": [],\n    \"execution_policy\": {\n      \"max_parallel\": 1,\n      \"model_calls\": 0,\n      \"conflicts\": \"Secuencial por defecto; no hay escritores simultáneos ni modelos invocados por el planificador.\",\n      \"review\": \"Revisar roles diferidos y criterios antes de implementar. Ningún plan autoriza auditorías, producción o efectos externos.\"\n    },\n    \"id\": \"PLAN-2d1f0b2e30ab7100\"\n  },\n  \"application\": {\n    \"plan_id\": \"PLAN-2d1f0b2e30ab7100\",\n    \"task_ids\": [\n      \"T0001\"\n    ],\n    \"already_applied\": true,\n    \"dry_run\": false\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\jimdev\\team-pallaquino\\validation\\venv\\Scripts\\uasek.exe",
+        "--root",
+        "C:\\jimdev\\team-pallaquino\\validation\\uasek-110-9gyvr9y0\\installed-project",
+        "checkpoint",
+        "verify",
+        "--id",
+        "CP-20261021T141528453121Z-0a9c0f4a"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"id\": \"CP-20261021T141528453121Z-0a9c0f4a\",\n  \"integrity_verified\": true,\n  \"tests_fresh_when_captured\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\jimdev\\team-pallaquino\\validation\\venv\\Scripts\\uasek.exe",
+        "--root",
+        "C:\\jimdev\\team-pallaquino\\validation\\uasek-110-9gyvr9y0\\installed-project",
+        "context",
+        "export"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"path\": \"C:\\\\jimdev\\\\team-pallaquino\\\\validation\\\\uasek-110-9gyvr9y0\\\\installed-project\\\\project-memory\\\\AI_HANDOFF.md\",\n  \"universal_context\": {\n    \"path\": \"C:\\\\jimdev\\\\team-pallaquino\\\\validation\\\\uasek-110-9gyvr9y0\\\\installed-project\\\\project-memory\\\\PROJECT_CONTEXT.json\",\n    \"format\": \"uasek.project-context\",\n    \"format_version\": 1,\n    \"state_sha256\": \"3d6dda47f0324eefb2c0eb15a7c417dc311cd3f756537aa948936ae3c6d194f2\",\n    \"dry_run\": false\n  },\n  \"provider\": \"manual\",\n  \"bytes\": 1979,\n  \"dry_run\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\jimdev\\team-pallaquino\\validation\\venv\\Scripts\\uasek.exe",
+        "init",
+        "--destination",
+        "C:\\jimdev\\team-pallaquino\\validation\\uasek-110-9gyvr9y0\\receiver",
+        "--name",
+        "Receiver 1.1"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"destination\": \"C:\\\\jimdev\\\\team-pallaquino\\\\validation\\\\uasek-110-9gyvr9y0\\\\receiver\",\n  \"name\": \"Receiver 1.1\",\n  \"template\": null,\n  \"dry_run\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\jimdev\\team-pallaquino\\validation\\venv\\Scripts\\uasek.exe",
+        "--root",
+        "C:\\jimdev\\team-pallaquino\\validation\\uasek-110-9gyvr9y0\\receiver",
+        "provider",
+        "switch",
+        "--provider",
+        "gemini"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"provider\": \"gemini\",\n  \"mode\": \"assistant\",\n  \"capabilities\": {\n    \"name\": \"Google / Gemini\",\n    \"application\": \"Gemini\",\n    \"manual_handoff\": true,\n    \"native_api\": false,\n    \"adapter\": \"manual-handoff\",\n    \"tools_execution\": false,\n    \"instructions\": \"Leer AI_HANDOFF.md y contratos del proyecto; validar capacidades y permisos del entorno receptor.\",\n    \"limits\": \"No configura ni cambia credenciales, suscripciones o aplicación; API cloud no implementada.\"\n  },\n  \"dry_run\": false,\n  \"handoff\": \"C:\\\\jimdev\\\\team-pallaquino\\\\validation\\\\uasek-110-9gyvr9y0\\\\receiver\\\\project-memory\\\\AI_HANDOFF.md\",\n  \"adapter_instructions\": \"C:\\\\jimdev\\\\team-pallaquino\\\\validation\\\\uasek-110-9gyvr9y0\\\\receiver\\\\ai\\\\handoff\\\\gemini.md\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\jimdev\\team-pallaquino\\validation\\venv\\Scripts\\uasek.exe",
+        "--root",
+        "C:\\jimdev\\team-pallaquino\\validation\\uasek-110-9gyvr9y0\\receiver",
+        "context",
+        "import",
+        "--file",
+        "C:\\jimdev\\team-pallaquino\\validation\\uasek-110-9gyvr9y0\\installed-project\\project-memory\\PROJECT_CONTEXT.json"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"imported_project\": \"Installed 1.1\",\n  \"tasks\": 1,\n  \"unverified_evidence\": [],\n  \"local_provider_preserved\": {\n    \"name\": \"gemini\",\n    \"mode\": \"assistant\"\n  },\n  \"dry_run\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\jimdev\\team-pallaquino\\validation\\venv\\Scripts\\uasek.exe",
+        "--root",
+        "C:\\jimdev\\team-pallaquino\\validation\\uasek-110-9gyvr9y0\\receiver",
+        "status"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"project\": {\n    \"name\": \"Installed 1.1\",\n    \"description\": \"\",\n    \"objectives\": [],\n    \"functional_requirements\": [],\n    \"non_functional_requirements\": []\n  },\n  \"counts\": {\n    \"todo\": 1,\n    \"in_progress\": 0,\n    \"blocked\": 0,\n    \"done\": 0\n  },\n  \"ready\": [\n    {\n      \"id\": \"T0001\",\n      \"title\": \"Documentation Engineer: Documentar README\",\n      \"agent\": \"documentation-engineer\",\n      \"acceptance\": \"Enlaces resuelven y ejemplos de CLI se ejecutan en entorno aislado. Resultado esperado: Documentar README\",\n      \"depends_on\": [],\n      \"status\": \"todo\",\n      \"evidence\": [],\n      \"created_at\": \"2026-10-21T14:15:28+00:00\",\n      \"updated_at\": \"2026-10-21T14:15:28+00:00\"\n    }\n  ],\n  \"provider\": {\n    \"name\": \"gemini\",\n    \"mode\": \"assistant\"\n  },\n  \"updated_at\": \"2026-10-21T14:15:29+00:00\"\n}\n",
+      "stderr": ""
+    }
+  ],
+  "wheel_sha256": "6caf38e3a638e63981689385919a2d3699cdd60d246cff8e3c3b424f3fcc56d6"
+}

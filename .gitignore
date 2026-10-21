@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+build/
+dist/
+.uasek/
+.env
+.env.*
+!.env.example
+backups/
+generated-projects/

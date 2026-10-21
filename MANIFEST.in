@@ -1,0 +1,8 @@
+recursive-include configs *.json
+recursive-include templates *
+recursive-include agents *
+recursive-include skills *
+recursive-include docs *
+recursive-include workflows *
+recursive-include tools *.py
+include kit.py README.md QUICKSTART.md LICENSE

@@ -1,0 +1,193 @@
+{
+  "validated": 31,
+  "failed": 0,
+  "validator": "skill-creator/scripts/quick_validate.py",
+  "results": [
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\ai\\agent-orchestration",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\ai\\context-management",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\ai\\knowledge-transfer",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\ai\\model-evaluation",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\ai\\prompt-engineering",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\ai\\provider-switching",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\architecture\\clean-architecture",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\architecture\\database-design",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\architecture\\domain-driven-design",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\architecture\\system-design",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\automation\\backup-automation",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\automation\\ci-cd",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\automation\\database-migrations",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\automation\\environment-setup",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\automation\\git-automation",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\automation\\infrastructure-as-code",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\automation\\release-automation",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\engineering\\api-design",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\engineering\\code-review",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\engineering\\refactoring",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\engineering\\requirements-engineering",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\engineering\\technical-documentation",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\security\\authentication",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\security\\authorization",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\security\\dependency-auditing",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\security\\owasp",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\security\\secrets-detection",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\security\\secure-coding",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\security\\security-testing",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\security\\threat-modeling",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    },
+    {
+      "skill": "UNIVERSAL-AI-SOFTWARE-KIT\\skills\\testing\\software-testing",
+      "returncode": 0,
+      "stdout": "Skill is valid!\n",
+      "stderr": ""
+    }
+  ]
+}

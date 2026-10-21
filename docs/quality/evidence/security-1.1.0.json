@@ -1,0 +1,19 @@
+{
+  "command": [
+    "C:\\Users\\ESTADISTICA\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\python.exe",
+    "kit.py",
+    "security"
+  ],
+  "returncode": 0,
+  "stderr": "",
+  "result": {
+    "at": "2026-10-21T14:15:16+00:00",
+    "kind": "heuristic-static-scan",
+    "inspected": 235,
+    "findings": [],
+    "skipped": [
+      "project-memory/checkpoints/CP-20261021T141506062607Z-578f03e8/sources.zip"
+    ],
+    "limitations": "No es SAST completo, prueba de penetración ni garantía de ausencia de secretos. No analiza binarios, archivos >1 MB ni directorios excluidos. Nunca imprime valores detectados."
+  }
+}

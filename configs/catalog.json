@@ -1,0 +1,182 @@
+[
+  {
+    "id": "sales",
+    "name": "Ventas y facturación",
+    "industry": "retail",
+    "path": "templates/systems/sales/SYSTEM.md"
+  },
+  {
+    "id": "inventory",
+    "name": "Inventarios y almacenes",
+    "industry": "retail",
+    "path": "templates/systems/inventory/SYSTEM.md"
+  },
+  {
+    "id": "human-resources",
+    "name": "Recursos humanos",
+    "industry": "saas",
+    "path": "templates/systems/human-resources/SYSTEM.md"
+  },
+  {
+    "id": "attendance",
+    "name": "Asistencia de personal",
+    "industry": "saas",
+    "path": "templates/systems/attendance/SYSTEM.md"
+  },
+  {
+    "id": "healthcare",
+    "name": "Clínicas y hospitales",
+    "industry": "healthcare",
+    "path": "templates/systems/healthcare/SYSTEM.md"
+  },
+  {
+    "id": "education",
+    "name": "Gestión educativa",
+    "industry": "education",
+    "path": "templates/systems/education/SYSTEM.md"
+  },
+  {
+    "id": "enrollment",
+    "name": "Matrículas académicas",
+    "industry": "education",
+    "path": "templates/systems/enrollment/SYSTEM.md"
+  },
+  {
+    "id": "restaurant",
+    "name": "Restaurantes",
+    "industry": "hospitality",
+    "path": "templates/systems/restaurant/SYSTEM.md"
+  },
+  {
+    "id": "hotel",
+    "name": "Sistema hotelero",
+    "industry": "hospitality",
+    "path": "templates/systems/hotel/SYSTEM.md"
+  },
+  {
+    "id": "logistics",
+    "name": "Transporte y logística",
+    "industry": "logistics",
+    "path": "templates/systems/logistics/SYSTEM.md"
+  },
+  {
+    "id": "ecommerce",
+    "name": "Comercio electrónico",
+    "industry": "retail",
+    "path": "templates/systems/ecommerce/SYSTEM.md"
+  },
+  {
+    "id": "accounting",
+    "name": "Sistema contable",
+    "industry": "finance",
+    "path": "templates/systems/accounting/SYSTEM.md"
+  },
+  {
+    "id": "real-estate",
+    "name": "Gestión inmobiliaria",
+    "industry": "saas",
+    "path": "templates/systems/real-estate/SYSTEM.md"
+  },
+  {
+    "id": "documents",
+    "name": "Gestión documental",
+    "industry": "saas",
+    "path": "templates/systems/documents/SYSTEM.md"
+  },
+  {
+    "id": "crm",
+    "name": "CRM empresarial",
+    "industry": "saas",
+    "path": "templates/systems/crm/SYSTEM.md"
+  },
+  {
+    "id": "erp",
+    "name": "ERP modular",
+    "industry": "saas",
+    "path": "templates/systems/erp/SYSTEM.md"
+  },
+  {
+    "id": "reservations",
+    "name": "Reservas",
+    "industry": "hospitality",
+    "path": "templates/systems/reservations/SYSTEM.md"
+  },
+  {
+    "id": "municipal",
+    "name": "Gestión municipal",
+    "industry": "government",
+    "path": "templates/systems/municipal/SYSTEM.md"
+  },
+  {
+    "id": "helpdesk",
+    "name": "Mesa de ayuda",
+    "industry": "saas",
+    "path": "templates/systems/helpdesk/SYSTEM.md"
+  },
+  {
+    "id": "projects",
+    "name": "Gestión de proyectos",
+    "industry": "saas",
+    "path": "templates/systems/projects/SYSTEM.md"
+  },
+  {
+    "id": "library",
+    "name": "Biblioteca",
+    "industry": "education",
+    "path": "templates/systems/library/SYSTEM.md"
+  },
+  {
+    "id": "elearning",
+    "name": "Cursos virtuales",
+    "industry": "education",
+    "path": "templates/systems/elearning/SYSTEM.md"
+  },
+  {
+    "id": "construction",
+    "name": "Construcción y obras",
+    "industry": "saas",
+    "path": "templates/systems/construction/SYSTEM.md"
+  },
+  {
+    "id": "agriculture",
+    "name": "Gestión agrícola y ganadera",
+    "industry": "saas",
+    "path": "templates/systems/agriculture/SYSTEM.md"
+  },
+  {
+    "id": "equipment",
+    "name": "Mantenimiento de equipos",
+    "industry": "logistics",
+    "path": "templates/systems/equipment/SYSTEM.md"
+  },
+  {
+    "id": "fleet",
+    "name": "Flotas vehiculares",
+    "industry": "logistics",
+    "path": "templates/systems/fleet/SYSTEM.md"
+  },
+  {
+    "id": "multitenant-saas",
+    "name": "SaaS multiempresa",
+    "industry": "saas",
+    "path": "templates/systems/multitenant-saas/SYSTEM.md"
+  },
+  {
+    "id": "identity",
+    "name": "Usuarios y accesos",
+    "industry": "saas",
+    "path": "templates/systems/identity/SYSTEM.md"
+  },
+  {
+    "id": "distribution",
+    "name": "Distribución comercial",
+    "industry": "retail",
+    "path": "templates/systems/distribution/SYSTEM.md"
+  },
+  {
+    "id": "contracts",
+    "name": "Gestión de contratos",
+    "industry": "saas",
+    "path": "templates/systems/contracts/SYSTEM.md"
+  }
+]

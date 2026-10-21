@@ -1,0 +1,88 @@
+{
+  "isolated_venv": true,
+  "build": {
+    "command": [
+      "C:\\Users\\ESTADISTICA\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\python.exe",
+      "-m",
+      "pip",
+      "wheel",
+      ".",
+      "--no-deps",
+      "--wheel-dir",
+      "C:\\jimdev\\team-pallaquino\\validation\\verified-wheels"
+    ],
+    "returncode": 0,
+    "stdout": "Processing .\\.\n  Installing build dependencies: started\n  Installing build dependencies: finished with status 'done'\n  Getting requirements to build wheel: started\n  Getting requirements to build wheel: finished with status 'done'\n  Preparing metadata (pyproject.toml): started\n  Preparing metadata (pyproject.toml): finished with status 'done'\nBuilding wheels for collected packages: universal-ai-software-kit\n  Building wheel for universal-ai-software-kit (pyproject.toml): started\n  Building wheel for universal-ai-software-kit (pyproject.toml): finished with status 'done'\n  Created wheel for universal-ai-software-kit: filename=universal_ai_software_kit-1.0.0-py3-none-any.whl size=126620 sha256=2126466b252d820e5207cd8037c09120f472489760224f1886b8c282c1b3d58f\n  Stored in directory: C:\\Users\\ESTADISTICA\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-emoeicfw\\wheels\\cb\\7b\\57\\5ed3146dbb93cffe1834312b1bc6f9416f349a555af23d154d\nSuccessfully built universal-ai-software-kit\n",
+    "stderr": ""
+  },
+  "install": {
+    "command": [
+      "C:\\jimdev\\team-pallaquino\\validation\\venv\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "install",
+      "--no-deps",
+      "--force-reinstall",
+      "C:\\jimdev\\team-pallaquino\\validation\\verified-wheels\\universal_ai_software_kit-1.0.0-py3-none-any.whl"
+    ],
+    "returncode": 0,
+    "stdout": "Processing c:\\jimdev\\team-pallaquino\\validation\\verified-wheels\\universal_ai_software_kit-1.0.0-py3-none-any.whl\nInstalling collected packages: universal-ai-software-kit\n  Attempting uninstall: universal-ai-software-kit\n    Found existing installation: universal-ai-software-kit 1.0.0\n    Uninstalling universal-ai-software-kit-1.0.0:\n      Successfully uninstalled universal-ai-software-kit-1.0.0\nSuccessfully installed universal-ai-software-kit-1.0.0\n",
+    "stderr": "\n[notice] A new release of pip is available: 25.0.1 -> 26.2.2\n[notice] To update, run: C:\\jimdev\\team-pallaquino\\validation\\venv\\Scripts\\python.exe -m pip install --upgrade pip\n"
+  },
+  "wheel_sha256": "2126466b252d820e5207cd8037c09120f472489760224f1886b8c282c1b3d58f",
+  "checks": [
+    {
+      "command": [
+        "C:\\jimdev\\team-pallaquino\\validation\\venv\\Scripts\\uasek.exe",
+        "doctor"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"python\": \"3.12.10\",\n  \"python_supported\": true,\n  \"platform\": \"win32\",\n  \"git\": \"C:\\\\Program Files\\\\Git\\\\cmd\\\\git.EXE\",\n  \"kit\": \"C:\\\\jimdev\\\\team-pallaquino\\\\validation\\\\venv\\\\Lib\\\\site-packages\",\n  \"root_exists\": true,\n  \"memory\": false,\n  \"dependencies\": \"Solo biblioteca estándar; instalación opcional con pip.\",\n  \"network\": \"No comprobada; comandos online requieren selección explícita.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\jimdev\\team-pallaquino\\validation\\venv\\Scripts\\uasek.exe",
+        "catalog"
+      ],
+      "returncode": 0,
+      "stdout": "[\n  {\n    \"id\": \"sales\",\n    \"name\": \"Ventas y facturación\",\n    \"industry\": \"retail\",\n    \"path\": \"templates/systems/sales/SYSTEM.md\"\n  },\n  {\n    \"id\": \"inventory\",\n    \"name\": \"Inventarios y almacenes\",\n    \"industry\": \"retail\",\n    \"path\": \"templates/systems/inventory/SYSTEM.md\"\n  },\n  {\n    \"id\": \"human-resources\",\n    \"name\": \"Recursos humanos\",\n    \"industry\": \"saas\",\n    \"path\": \"templates/systems/human-resources/SYSTEM.md\"\n  },\n  {\n    \"id\": \"attendance\",\n    \"name\": \"Asistencia de personal\",\n    \"industry\": \"saas\",\n    \"path\": \"templates/systems/attendance/SYSTEM.md\"\n  },\n  {\n    \"id\": \"healthcare\",\n    \"name\": \"Clínicas y hospitales\",\n    \"industry\": \"healthcare\",\n    \"path\": \"templates/systems/healthcare/SYSTEM.md\"\n  },\n  {\n    \"id\": \"education\",\n    \"name\": \"Gestión educativa\",\n    \"industry\": \"education\",\n    \"path\": \"templates/systems/education/SYSTEM.md\"\n  },\n  {\n    \"id\": \"enrollment\",\n    \"name\": \"Matrículas académicas\",\n    \"industry\": \"education\",\n    \"path\": \"templates/systems/enrollment/SYSTEM.md\"\n  },\n  {\n    \"id\": \"restaurant\",\n    \"name\": \"Restaurantes\",\n    \"industry\": \"hospitality\",\n    \"path\": \"templates/systems/restaurant/SYSTEM.md\"\n  },\n  {\n    \"id\": \"hotel\",\n    \"name\": \"Sistema hotelero\",\n    \"industry\": \"hospitality\",\n    \"path\": \"templates/systems/hotel/SYSTEM.md\"\n  },\n  {\n    \"id\": \"logistics\",\n    \"name\": \"Transporte y logística\",\n    \"industry\": \"logistics\",\n    \"path\": \"templates/systems/logistics/SYSTEM.md\"\n  },\n  {\n    \"id\": \"ecommerce\",\n    \"name\": \"Comercio electrónico\",\n    \"industry\": \"retail\",\n    \"path\": \"templates/systems/ecommerce/SYSTEM.md\"\n  },\n  {\n    \"id\": \"accounting\",\n    \"name\": \"Sistema contable\",\n    \"industry\": \"finance\",\n    \"path\": \"templates/systems/accounting/SYSTEM.md\"\n  },\n  {\n    \"id\": \"real-estate\",\n    \"name\": \"Gestión inmobiliaria\",\n    \"industry\": \"saas\",\n    \"path\": \"templates/systems/real-estate/SYSTEM.md\"\n  },\n  {\n    \"id\": \"documents\",\n    \"name\": \"Gestión documental\",\n    \"industry\": \"saas\",\n    \"path\": \"templates/systems/documents/SYSTEM.md\"\n  },\n  {\n    \"id\": \"crm\",\n    \"name\": \"CRM empresarial\",\n    \"industry\": \"saas\",\n    \"path\": \"templates/systems/crm/SYSTEM.md\"\n  },\n  {\n    \"id\": \"erp\",\n    \"name\": \"ERP modular\",\n    \"industry\": \"saas\",\n    \"path\": \"templates/systems/erp/SYSTEM.md\"\n  },\n  {\n    \"id\": \"reservations\",\n    \"name\": \"Reservas\",\n    \"industry\": \"hospitality\",\n    \"path\": \"templates/systems/reservations/SYSTEM.md\"\n  },\n  {\n    \"id\": \"municipal\",\n    \"name\": \"Gestión municipal\",\n    \"industry\": \"government\",\n    \"path\": \"templates/systems/municipal/SYSTEM.md\"\n  },\n  {\n    \"id\": \"helpdesk\",\n    \"name\": \"Mesa de ayuda\",\n    \"industry\": \"saas\",\n    \"path\": \"templates/systems/helpdesk/SYSTEM.md\"\n  },\n  {\n    \"id\": \"projects\",\n    \"name\": \"Gestión de proyectos\",\n    \"industry\": \"saas\",\n    \"path\": \"templates/systems/projects/SYSTEM.md\"\n  },\n  {\n    \"id\": \"library\",\n    \"name\": \"Biblioteca\",\n    \"industry\": \"education\",\n    \"path\": \"templates/systems/library/SYSTEM.md\"\n  },\n  {\n    \"id\": \"elearning\",\n    \"name\": \"Cursos virtuales\",\n    \"industry\": \"education\",\n    \"path\": \"templates/systems/elearning/SYSTEM.md\"\n  },\n  {\n    \"id\": \"construction\",\n    \"name\": \"Construcción y obras\",\n    \"industry\": \"saas\",\n    \"path\": \"templates/systems/construction/SYSTEM.md\"\n  },\n  {\n    \"id\": \"agriculture\",\n    \"name\": \"Gestión agrícola y ganadera\",\n    \"industry\": \"saas\",\n    \"path\": \"templates/systems/agriculture/SYSTEM.md\"\n  },\n  {\n    \"id\": \"equipment\",\n    \"name\": \"Mantenimiento de equipos\",\n    \"industry\": \"logistics\",\n    \"path\": \"templates/systems/equipment/SYSTEM.md\"\n  },\n  {\n    \"id\": \"fleet\",\n    \"name\": \"Flotas vehiculares\",\n    \"industry\": \"logistics\",\n    \"path\": \"templates/systems/fleet/SYSTEM.md\"\n  },\n  {\n    \"id\": \"multitenant-saas\",\n    \"name\": \"SaaS multiempresa\",\n    \"industry\": \"saas\",\n    \"path\": \"templates/systems/multitenant-saas/SYSTEM.md\"\n  },\n  {\n    \"id\": \"identity\",\n    \"name\": \"Usuarios y accesos\",\n    \"industry\": \"saas\",\n    \"path\": \"templates/systems/identity/SYSTEM.md\"\n  },\n  {\n    \"id\": \"distribution\",\n    \"name\": \"Distribución comercial\",\n    \"industry\": \"retail\",\n    \"path\": \"templates/systems/distribution/SYSTEM.md\"\n  },\n  {\n    \"id\": \"contracts\",\n    \"name\": \"Gestión de contratos\",\n    \"industry\": \"saas\",\n    \"path\": \"templates/systems/contracts/SYSTEM.md\"\n  }\n]\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\jimdev\\team-pallaquino\\validation\\venv\\Scripts\\uasek.exe",
+        "agent",
+        "list"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"orchestrator\": \"Orchestrator\",\n  \"product-owner\": \"Product Owner\",\n  \"business-analyst\": \"Business Analyst\",\n  \"solution-architect\": \"Solution Architect\",\n  \"tech-lead\": \"Tech Lead\",\n  \"frontend-engineer\": \"Frontend Engineer\",\n  \"backend-engineer\": \"Backend Engineer\",\n  \"database-architect\": \"Database Architect\",\n  \"ux-ui-designer\": \"UX/UI Designer\",\n  \"qa-engineer\": \"QA Engineer\",\n  \"security-engineer\": \"Security Engineer\",\n  \"devops-engineer\": \"DevOps Engineer\",\n  \"sre-engineer\": \"SRE Engineer\",\n  \"git-auditor\": \"Git Auditor\",\n  \"documentation-engineer\": \"Documentation Engineer\",\n  \"performance-engineer\": \"Performance Engineer\",\n  \"integration-engineer\": \"Integration Engineer\",\n  \"ai-engineer\": \"AI Engineer\",\n  \"migration-engineer\": \"Migration Engineer\",\n  \"maintenance-engineer\": \"Maintenance Engineer\",\n  \"release-manager\": \"Release Manager\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\jimdev\\team-pallaquino\\validation\\venv\\Scripts\\uasek.exe",
+        "provider",
+        "list"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"manual\": {\n    \"name\": \"Asistente genérico\",\n    \"application\": \"Cualquier asistente\",\n    \"manual_handoff\": true,\n    \"native_api\": false,\n    \"adapter\": \"manual-handoff\",\n    \"tools_execution\": false,\n    \"instructions\": \"Leer AI_HANDOFF.md y contratos del proyecto; validar capacidades y permisos del entorno receptor.\",\n    \"limits\": \"No configura ni cambia credenciales, suscripciones o aplicación; API cloud no implementada.\"\n  },\n  \"openai\": {\n    \"name\": \"OpenAI / ChatGPT\",\n    \"application\": \"ChatGPT o Codex\",\n    \"manual_handoff\": true,\n    \"native_api\": false,\n    \"adapter\": \"manual-handoff\",\n    \"tools_execution\": false,\n    \"instructions\": \"Leer AI_HANDOFF.md y contratos del proyecto; validar capacidades y permisos del entorno receptor.\",\n    \"limits\": \"No configura ni cambia credenciales, suscripciones o aplicación; API cloud no implementada.\"\n  },\n  \"claude\": {\n    \"name\": \"Anthropic / Claude\",\n    \"application\": \"Claude\",\n    \"manual_handoff\": true,\n    \"native_api\": false,\n    \"adapter\": \"manual-handoff\",\n    \"tools_execution\": false,\n    \"instructions\": \"Leer AI_HANDOFF.md y contratos del proyecto; validar capacidades y permisos del entorno receptor.\",\n    \"limits\": \"No configura ni cambia credenciales, suscripciones o aplicación; API cloud no implementada.\"\n  },\n  \"gemini\": {\n    \"name\": \"Google / Gemini\",\n    \"application\": \"Gemini\",\n    \"manual_handoff\": true,\n    \"native_api\": false,\n    \"adapter\": \"manual-handoff\",\n    \"tools_execution\": false,\n    \"instructions\": \"Leer AI_HANDOFF.md y contratos del proyecto; validar capacidades y permisos del entorno receptor.\",\n    \"limits\": \"No configura ni cambia credenciales, suscripciones o aplicación; API cloud no implementada.\"\n  },\n  \"copilot\": {\n    \"name\": \"GitHub Copilot\",\n    \"application\": \"IDE\",\n    \"manual_handoff\": true,\n    \"native_api\": false,\n    \"adapter\": \"manual-handoff\",\n    \"tools_execution\": false,\n    \"instructions\": \"Leer AI_HANDOFF.md y contratos del proyecto; validar capacidades y permisos del entorno receptor.\",\n    \"limits\": \"No configura ni cambia credenciales, suscripciones o aplicación; API cloud no implementada.\"\n  },\n  \"cursor\": {\n    \"name\": \"Cursor\",\n    \"application\": \"IDE\",\n    \"manual_handoff\": true,\n    \"native_api\": false,\n    \"adapter\": \"manual-handoff\",\n    \"tools_execution\": false,\n    \"instructions\": \"Leer AI_HANDOFF.md y contratos del proyecto; validar capacidades y permisos del entorno receptor.\",\n    \"limits\": \"No configura ni cambia credenciales, suscripciones o aplicación; API cloud no implementada.\"\n  },\n  \"windsurf\": {\n    \"name\": \"Windsurf\",\n    \"application\": \"IDE\",\n    \"manual_handoff\": true,\n    \"native_api\": false,\n    \"adapter\": \"manual-handoff\",\n    \"tools_execution\": false,\n    \"instructions\": \"Leer AI_HANDOFF.md y contratos del proyecto; validar capacidades y permisos del entorno receptor.\",\n    \"limits\": \"No configura ni cambia credenciales, suscripciones o aplicación; API cloud no implementada.\"\n  },\n  \"openrouter\": {\n    \"name\": \"OpenRouter\",\n    \"application\": \"Cliente externo\",\n    \"manual_handoff\": true,\n    \"native_api\": false,\n    \"adapter\": \"manual-handoff\",\n    \"tools_execution\": false,\n    \"instructions\": \"Leer AI_HANDOFF.md y contratos del proyecto; validar capacidades y permisos del entorno receptor.\",\n    \"limits\": \"No configura ni cambia credenciales, suscripciones o aplicación; API cloud no implementada.\"\n  },\n  \"ollama\": {\n    \"name\": \"Ollama\",\n    \"application\": \"Servidor local\",\n    \"manual_handoff\": true,\n    \"native_api\": true,\n    \"adapter\": \"ollama-native\",\n    \"tools_execution\": false,\n    \"instructions\": \"Leer AI_HANDOFF.md y contratos del proyecto; validar capacidades y permisos del entorno receptor.\",\n    \"limits\": \"Solo inferencia local de texto; no ejecuta herramientas.\"\n  },\n  \"local\": {\n    \"name\": \"Otros modelos locales\",\n    \"application\": \"Cliente local externo\",\n    \"manual_handoff\": true,\n    \"native_api\": false,\n    \"adapter\": \"manual-handoff\",\n    \"tools_execution\": false,\n    \"instructions\": \"Leer AI_HANDOFF.md y contratos del proyecto; validar capacidades y permisos del entorno receptor.\",\n    \"limits\": \"No configura ni cambia credenciales, suscripciones o aplicación; API cloud no implementada.\"\n  },\n  \"compatible\": {\n    \"name\": \"Otros proveedores compatibles\",\n    \"application\": \"Cliente externo\",\n    \"manual_handoff\": true,\n    \"native_api\": false,\n    \"adapter\": \"manual-handoff\",\n    \"tools_execution\": false,\n    \"instructions\": \"Leer AI_HANDOFF.md y contratos del proyecto; validar capacidades y permisos del entorno receptor.\",\n    \"limits\": \"No configura ni cambia credenciales, suscripciones o aplicación; API cloud no implementada.\"\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\jimdev\\team-pallaquino\\validation\\venv\\Scripts\\uasek.exe",
+        "init",
+        "--destination",
+        "C:\\jimdev\\team-pallaquino\\validation\\distribution-3czraqfz\\installed-project",
+        "--name",
+        "Verified installation",
+        "--template",
+        "inventory"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"destination\": \"C:\\\\jimdev\\\\team-pallaquino\\\\validation\\\\distribution-3czraqfz\\\\installed-project\",\n  \"name\": \"Verified installation\",\n  \"template\": \"inventory\",\n  \"dry_run\": false\n}\n",
+      "stderr": ""
+    }
+  ]
+}

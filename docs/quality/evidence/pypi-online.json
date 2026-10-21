@@ -1,0 +1,22 @@
+{
+  "command": [
+    "C:\\Users\\ESTADISTICA\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\python.exe",
+    "kit.py",
+    "stack",
+    "--package",
+    "pip",
+    "--online"
+  ],
+  "returncode": 0,
+  "expected": 0,
+  "stderr": "",
+  "result": {
+    "package": "pip",
+    "ecosystem": "pypi",
+    "source": "https://pypi.org/pypi/pip/json",
+    "verified_at": "2026-10-21T13:54:00+00:00",
+    "version": "26.2.2",
+    "status": "registry_metadata_verified",
+    "limits": "La etiqueta latest del registro no demuestra compatibilidad, LTS ni ausencia de vulnerabilidades; comprobar notas oficiales antes de elegir."
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "authorized": true,
+  "scope": "full",
+  "at": "2026-10-21T14:15:06+00:00",
+  "status": "not_a_git_repository",
+  "returncode": 2,
+  "stderr": "ERROR: KitError: La carpeta no pertenece a un repositorio Git.\n"
+}

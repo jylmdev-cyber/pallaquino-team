@@ -1,0 +1,13 @@
+{
+  "provenance": "ZIP original 1.0.0 preservado; checkpoint reconstruido después a partir de esos bytes.",
+  "source_archive_sha256": "181c1119272bc9d3c1c05727c916772d023136d35fcd8d0b192ed781311e641c",
+  "files_verified": 221,
+  "checkpoint": {
+    "id": "CP-20261021T141506062607Z-578f03e8",
+    "files": 221,
+    "omitted": [],
+    "tests_fresh_and_passing": true,
+    "source_fingerprint": "02a786d22ba6a4a3222b7a421057c4027841c2cda1d0321d5074de553f0dd63b",
+    "dry_run": false
+  }
+}

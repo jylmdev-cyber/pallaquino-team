@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:uasek:project-context:1",
+  "title": "UASEK universal project context v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["format", "format_version", "exported_at", "state", "state_sha256"],
+  "properties": {
+    "format": {"const": "uasek.project-context"},
+    "format_version": {"const": 1, "type": "integer"},
+    "exported_at": {"type": "string"},
+    "state_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "project", "architecture", "stack", "decisions", "tasks", "known_issues", "technical_debt", "audits", "history", "next_actions", "last_task", "files_involved", "validated_checkpoint", "updated_at"],
+      "properties": {
+        "schema_version": {"const": 1},
+        "project": {
+          "type": "object", "additionalProperties": false,
+          "required": ["name", "description", "objectives", "functional_requirements", "non_functional_requirements"],
+          "properties": {
+            "name": {"type": "string"}, "description": {"type": "string"},
+            "objectives": {"$ref": "#/$defs/texts"},
+            "functional_requirements": {"$ref": "#/$defs/texts"},
+            "non_functional_requirements": {"$ref": "#/$defs/texts"}
+          }
+        },
+        "architecture": {"type": "string"}, "stack": {"type": "array"},
+        "decisions": {"$ref": "#/$defs/texts"},
+        "known_issues": {"$ref": "#/$defs/texts"}, "technical_debt": {"$ref": "#/$defs/texts"},
+        "audits": {"type": "array"}, "history": {"$ref": "#/$defs/texts"},
+        "next_actions": {"$ref": "#/$defs/texts"}, "files_involved": {"$ref": "#/$defs/texts"},
+        "last_task": {"type": ["string", "null"]}, "validated_checkpoint": {"type": ["string", "null"]},
+        "updated_at": {"type": "string"},
+        "tasks": {"type": "array", "items": {
+          "type": "object", "required": ["id", "title", "agent", "acceptance", "depends_on", "status", "evidence"],
+          "properties": {
+            "id": {"type": "string", "pattern": "^T[0-9]{4,}$"},
+            "title": {"type": "string"}, "agent": {"type": "string"}, "acceptance": {"type": "string"},
+            "depends_on": {"$ref": "#/$defs/texts"}, "evidence": {"$ref": "#/$defs/texts"},
+            "status": {"enum": ["todo", "in_progress", "blocked", "done"]}
+          }
+        }}
+      }
+    }
+  },
+  "$defs": {"texts": {"type": "array", "items": {"type": "string"}}}
+}

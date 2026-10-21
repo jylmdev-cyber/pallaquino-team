@@ -1,0 +1,112 @@
+{
+  "manual": {
+    "name": "Asistente genérico",
+    "application": "Cualquier asistente",
+    "manual_handoff": true,
+    "native_api": false,
+    "adapter": "manual-handoff",
+    "tools_execution": false,
+    "instructions": "Leer AI_HANDOFF.md y contratos del proyecto; validar capacidades y permisos del entorno receptor.",
+    "limits": "No configura ni cambia credenciales, suscripciones o aplicación; API cloud no implementada."
+  },
+  "openai": {
+    "name": "OpenAI / ChatGPT",
+    "application": "ChatGPT o Codex",
+    "manual_handoff": true,
+    "native_api": false,
+    "adapter": "manual-handoff",
+    "tools_execution": false,
+    "instructions": "Leer AI_HANDOFF.md y contratos del proyecto; validar capacidades y permisos del entorno receptor.",
+    "limits": "No configura ni cambia credenciales, suscripciones o aplicación; API cloud no implementada."
+  },
+  "claude": {
+    "name": "Anthropic / Claude",
+    "application": "Claude",
+    "manual_handoff": true,
+    "native_api": false,
+    "adapter": "manual-handoff",
+    "tools_execution": false,
+    "instructions": "Leer AI_HANDOFF.md y contratos del proyecto; validar capacidades y permisos del entorno receptor.",
+    "limits": "No configura ni cambia credenciales, suscripciones o aplicación; API cloud no implementada."
+  },
+  "gemini": {
+    "name": "Google / Gemini",
+    "application": "Gemini",
+    "manual_handoff": true,
+    "native_api": false,
+    "adapter": "manual-handoff",
+    "tools_execution": false,
+    "instructions": "Leer AI_HANDOFF.md y contratos del proyecto; validar capacidades y permisos del entorno receptor.",
+    "limits": "No configura ni cambia credenciales, suscripciones o aplicación; API cloud no implementada."
+  },
+  "copilot": {
+    "name": "GitHub Copilot",
+    "application": "IDE",
+    "manual_handoff": true,
+    "native_api": false,
+    "adapter": "manual-handoff",
+    "tools_execution": false,
+    "instructions": "Leer AI_HANDOFF.md y contratos del proyecto; validar capacidades y permisos del entorno receptor.",
+    "limits": "No configura ni cambia credenciales, suscripciones o aplicación; API cloud no implementada."
+  },
+  "cursor": {
+    "name": "Cursor",
+    "application": "IDE",
+    "manual_handoff": true,
+    "native_api": false,
+    "adapter": "manual-handoff",
+    "tools_execution": false,
+    "instructions": "Leer AI_HANDOFF.md y contratos del proyecto; validar capacidades y permisos del entorno receptor.",
+    "limits": "No configura ni cambia credenciales, suscripciones o aplicación; API cloud no implementada."
+  },
+  "windsurf": {
+    "name": "Windsurf",
+    "application": "IDE",
+    "manual_handoff": true,
+    "native_api": false,
+    "adapter": "manual-handoff",
+    "tools_execution": false,
+    "instructions": "Leer AI_HANDOFF.md y contratos del proyecto; validar capacidades y permisos del entorno receptor.",
+    "limits": "No configura ni cambia credenciales, suscripciones o aplicación; API cloud no implementada."
+  },
+  "openrouter": {
+    "name": "OpenRouter",
+    "application": "Cliente externo",
+    "manual_handoff": true,
+    "native_api": false,
+    "adapter": "manual-handoff",
+    "tools_execution": false,
+    "instructions": "Leer AI_HANDOFF.md y contratos del proyecto; validar capacidades y permisos del entorno receptor.",
+    "limits": "No configura ni cambia credenciales, suscripciones o aplicación; API cloud no implementada."
+  },
+  "ollama": {
+    "name": "Ollama",
+    "application": "Servidor local",
+    "manual_handoff": true,
+    "native_api": true,
+    "adapter": "ollama-native",
+    "tools_execution": false,
+    "instructions": "Leer AI_HANDOFF.md y contratos del proyecto; validar capacidades y permisos del entorno receptor.",
+    "limits": "Solo inferencia local de texto; no ejecuta herramientas."
+  },
+  "local": {
+    "name": "Otros modelos locales",
+    "application": "Cliente local externo",
+    "manual_handoff": true,
+    "native_api": false,
+    "adapter": "manual-handoff",
+    "tools_execution": false,
+    "instructions": "Leer AI_HANDOFF.md y contratos del proyecto; validar capacidades y permisos del entorno receptor.",
+    "limits": "No configura ni cambia credenciales, suscripciones o aplicación; API cloud no implementada."
+  },
+  "compatible": {
+    "name": "Otros proveedores compatibles",
+    "application": "Cliente externo",
+    "manual_handoff": true,
+    "native_api": false,
+    "adapter": "manual-handoff",
+    "tools_execution": false,
+    "instructions": "Leer AI_HANDOFF.md y contratos del proyecto; validar capacidades y permisos del entorno receptor.",
+    "limits": "No configura ni cambia credenciales, suscripciones o aplicación; API cloud no implementada."
+  }
+}

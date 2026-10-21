@@ -1,6 +1,6 @@
 # AI HANDOFF
 
-Generado: 2026-10-21T23:39:06+00:00
+Generado: 2026-10-21T23:54:57+00:00
 
 ## 1. Resumen ejecutivo
 
@@ -115,6 +115,21 @@ Generado: 2026-10-21T23:39:06+00:00
     ],
     "created_at": "2026-10-21T23:35:33+00:00",
     "updated_at": "2026-10-21T23:39:05+00:00"
+  },
+  {
+    "id": "T0007",
+    "title": "README profesional con badges y diagramas",
+    "agent": "documentation-engineer",
+    "acceptance": "Stack verificable, gráficos legibles, índice compatible con GitHub/portal, ejemplos reales y evidencia; commits con autoría solicitada.",
+    "depends_on": [],
+    "status": "done",
+    "evidence": [
+      "README.md",
+      "documentation/portal/.vitepress/theme/style.css",
+      "docs/quality/evidence/readme-validation.json"
+    ],
+    "created_at": "2026-10-21T23:54:57+00:00",
+    "updated_at": "2026-10-21T23:54:57+00:00"
   }
 ]
 ```
@@ -171,18 +186,16 @@ Generado: 2026-10-21T23:39:06+00:00
 ## 6. Última tarea
 
 ```json
-"T0006"
+"T0007"
 ```
 
 ## 7. Archivos involucrados
 
 ```json
 [
-  "uasek/documentation.py",
-  "tests/test_documentation.py",
-  "documentation/PORTAL_MANUAL.md",
-  "documentation/content/quality/validation.md",
-  "docs/quality/evidence/udp-validation.json"
+  "README.md",
+  "documentation/portal/.vitepress/theme/style.css",
+  "docs/quality/evidence/readme-validation.json"
 ]
 ```
 
@@ -209,10 +222,9 @@ Generado: 2026-10-21T23:39:06+00:00
 ```json
 {
   "next": [
-    "Revisar el portal local y el manual de administración antes de autorizar publicación.",
-    "Con autorización posterior, publicar cambios al repositorio y configurar Pages/entorno y UDP_PAGES_ENABLED; verificar URL real.",
-    "Ejecutar los workflows en GitHub y completar accesibilidad WCAG y validación Linux/macOS.",
-    "Continuar la validación pendiente de Docker, modelos reales y conectores externos de EIP."
+    "Subir los commits autorizados a origin/main y comprobar sus workflows; Pages permanece deshabilitado.",
+    "Activar GitHub Pages solo con autorización posterior y verificar su URL real.",
+    "Completar accesibilidad WCAG y validación pendiente de Docker, modelos reales y conectores externos."
   ],
   "ready": []
 }

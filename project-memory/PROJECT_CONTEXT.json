@@ -1,7 +1,7 @@
 {
   "format": "uasek.project-context",
   "format_version": 1,
-  "exported_at": "2026-10-21T23:39:06+00:00",
+  "exported_at": "2026-10-21T23:54:57+00:00",
   "state": {
     "schema_version": 1,
     "project": {
@@ -143,6 +143,21 @@
         ],
         "created_at": "2026-10-21T23:35:33+00:00",
         "updated_at": "2026-10-21T23:39:05+00:00"
+      },
+      {
+        "id": "T0007",
+        "title": "README profesional con badges y diagramas",
+        "agent": "documentation-engineer",
+        "acceptance": "Stack verificable, gráficos legibles, índice compatible con GitHub/portal, ejemplos reales y evidencia; commits con autoría solicitada.",
+        "depends_on": [],
+        "status": "done",
+        "evidence": [
+          "README.md",
+          "documentation/portal/.vitepress/theme/style.css",
+          "docs/quality/evidence/readme-validation.json"
+        ],
+        "created_at": "2026-10-21T23:54:57+00:00",
+        "updated_at": "2026-10-21T23:54:57+00:00"
       }
     ],
     "known_issues": [
@@ -195,24 +210,24 @@
       "2026-10-21T23:35:33+00:00 T0006: done",
       "2026-10-21T23:36:28+00:00 T0006: in_progress",
       "2026-10-21T23:39:05+00:00 cierre UDP con permisos EIP y 137 pruebas; build en dos bases, búsqueda, móvil y 71 diagramas en navegador.",
-      "2026-10-21T23:39:05+00:00 T0006: done"
+      "2026-10-21T23:39:05+00:00 T0006: done",
+      "2026-10-21T23:54:57+00:00 README ampliado con badges declarativos, cuatro diagramas, stack, instalación, permisos y validación; portal UDP incorporado en commit local cc4a354. Push autorizado por el propietario.",
+      "2026-10-21T23:54:57+00:00 creada T0007",
+      "2026-10-21T23:54:57+00:00 T0007: done"
     ],
     "next_actions": [
-      "Revisar el portal local y el manual de administración antes de autorizar publicación.",
-      "Con autorización posterior, publicar cambios al repositorio y configurar Pages/entorno y UDP_PAGES_ENABLED; verificar URL real.",
-      "Ejecutar los workflows en GitHub y completar accesibilidad WCAG y validación Linux/macOS.",
-      "Continuar la validación pendiente de Docker, modelos reales y conectores externos de EIP."
+      "Subir los commits autorizados a origin/main y comprobar sus workflows; Pages permanece deshabilitado.",
+      "Activar GitHub Pages solo con autorización posterior y verificar su URL real.",
+      "Completar accesibilidad WCAG y validación pendiente de Docker, modelos reales y conectores externos."
     ],
-    "last_task": "T0006",
+    "last_task": "T0007",
     "files_involved": [
-      "uasek/documentation.py",
-      "tests/test_documentation.py",
-      "documentation/PORTAL_MANUAL.md",
-      "documentation/content/quality/validation.md",
-      "docs/quality/evidence/udp-validation.json"
+      "README.md",
+      "documentation/portal/.vitepress/theme/style.css",
+      "docs/quality/evidence/readme-validation.json"
     ],
     "validated_checkpoint": "CP-20261021T233906311869Z-fe5a4408",
-    "updated_at": "2026-10-21T23:39:06+00:00"
+    "updated_at": "2026-10-21T23:54:57+00:00"
   },
-  "state_sha256": "73cb4ec0e98831e8d1480208126d922baf870d168312a4cfcad3c797c4312ffd"
+  "state_sha256": "14911fae747da84ce12892ebaaa8f5ee99ca75d853cbbb969409231054205b7c"
 }

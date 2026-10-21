@@ -19,3 +19,6 @@
 - 2026-10-21T23:36:28+00:00 T0006: in_progress
 - 2026-10-21T23:39:05+00:00 cierre UDP con permisos EIP y 137 pruebas; build en dos bases, búsqueda, móvil y 71 diagramas en navegador.
 - 2026-10-21T23:39:05+00:00 T0006: done
+- 2026-10-21T23:54:57+00:00 README ampliado con badges declarativos, cuatro diagramas, stack, instalación, permisos y validación; portal UDP incorporado en commit local cc4a354. Push autorizado por el propietario.
+- 2026-10-21T23:54:57+00:00 creada T0007
+- 2026-10-21T23:54:57+00:00 T0007: done

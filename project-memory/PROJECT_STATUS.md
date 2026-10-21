@@ -6,3 +6,4 @@
 - T0004 [done] Contexto universal, checkpoints y orquestación adaptable (tech-lead)
 - T0005 [done] Engineering Intelligence Platform A–O (tech-lead)
 - T0006 [done] Universal Documentation Portal y marca PALLAQUINO TEAM (tech-lead)
+- T0007 [done] README profesional con badges y diagramas (documentation-engineer)

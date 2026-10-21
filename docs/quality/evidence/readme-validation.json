@@ -1,0 +1,95 @@
+{
+  "at": "2026-10-21T23:54:57+00:00",
+  "readme_sha256": "356332734d3553bb7fc1ced7feedc5e408eb581853058fc2c7ec875c40892506",
+  "stack_badges_checked": 10,
+  "badges": [
+    {
+      "label": "Software 2.0.0",
+      "url": "https://img.shields.io/badge/Software-2.0.0-0f766e",
+      "http_status": 200,
+      "valid_svg": true
+    },
+    {
+      "label": "UDP edición 1",
+      "url": "https://img.shields.io/badge/Portal_UDP-Edici%C3%B3n_1-0f766e",
+      "http_status": 200,
+      "valid_svg": true
+    },
+    {
+      "label": "Licencia MIT",
+      "url": "https://img.shields.io/badge/Licencia-MIT-64748b",
+      "http_status": 200,
+      "valid_svg": true
+    },
+    {
+      "label": "Documentación en español",
+      "url": "https://img.shields.io/badge/Documentaci%C3%B3n-Espa%C3%B1ol-64748b",
+      "http_status": 200,
+      "valid_svg": true
+    },
+    {
+      "label": "Python 3.11 o superior",
+      "url": "https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white",
+      "http_status": 200,
+      "valid_svg": true
+    },
+    {
+      "label": "Node.js 24.22.0",
+      "url": "https://img.shields.io/badge/Node.js-24.22.0-339933?logo=nodedotjs&logoColor=white",
+      "http_status": 200,
+      "valid_svg": true
+    },
+    {
+      "label": "VitePress 1.6.4",
+      "url": "https://img.shields.io/badge/VitePress-1.6.4-646CFF?logo=vitepress&logoColor=white",
+      "http_status": 200,
+      "valid_svg": true
+    },
+    {
+      "label": "Vue 3.5.44",
+      "url": "https://img.shields.io/badge/Vue-3.5.44-4FC08D?logo=vuedotjs&logoColor=white",
+      "http_status": 200,
+      "valid_svg": true
+    },
+    {
+      "label": "Mermaid 12.2.0",
+      "url": "https://img.shields.io/badge/Mermaid-12.2.0-FF3670?logo=mermaid&logoColor=white",
+      "http_status": 200,
+      "valid_svg": true
+    },
+    {
+      "label": "GitHub Actions configurado",
+      "url": "https://img.shields.io/badge/GitHub_Actions-Configurado-2088FF?logo=githubactions&logoColor=white",
+      "http_status": 200,
+      "valid_svg": true
+    }
+  ],
+  "mermaid_diagrams_rendered": 4,
+  "cli_examples_executed": 13,
+  "github_markdown": {
+    "renderer": "GitHub REST markdown, mode gfm",
+    "anchors": 11,
+    "mermaid_fences": 4,
+    "tables": 7,
+    "valid": true
+  },
+  "portal_build": {
+    "valid": true,
+    "html_pages": 218,
+    "local_references_checked": 28120,
+    "base": "/pallaquino-team/",
+    "private_sources_included": false,
+    "deployed": false,
+    "artifact": "documentation/portal/.vitepress/dist",
+    "publication": "Preparado, sin cambios remotos. Habilitación UDP_PAGES_ENABLED y autorización de publicación pendientes."
+  },
+  "browser_navigation_verified": true,
+  "tests": {
+    "ran": 137,
+    "passed": 136,
+    "skipped": 1,
+    "source_fingerprint": "8dc6d712df44836403522fb2d0696a81f00578f81f7ad7797d2cde18d79d7744"
+  },
+  "diagram_style_fix": "Reset margins and line height of HTML labels to avoid clipping inside SVG nodes.",
+  "pages_deployment": "Disabled: UDP_PAGES_ENABLED absent when checked; no remote settings changed."
+}

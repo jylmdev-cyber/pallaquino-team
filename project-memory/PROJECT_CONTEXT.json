@@ -1,7 +1,7 @@
 {
   "format": "uasek.project-context",
   "format_version": 1,
-  "exported_at": "2026-10-21T14:38:19+00:00",
+  "exported_at": "2026-10-21T21:29:37+00:00",
   "state": {
     "schema_version": 1,
     "project": {
@@ -11,7 +11,7 @@
       "functional_requirements": [],
       "non_functional_requirements": []
     },
-    "architecture": "CLI modular Python; archivos JSON/Markdown; operaciones locales; HTTP explícito OSV/registros/Ollama.",
+    "architecture": "CLI modular Python estándar; núcleo UASEK y capa EIP independiente de proveedores; memoria JSON/Markdown, ejecución coordinada, adaptadores reemplazables y política local.",
     "stack": [
       {
         "technology": "Python",
@@ -33,7 +33,12 @@
       "Contexto universal v1 separado de configuración e instrucciones de proveedores.",
       "Checkpoints verificables; recuperar siempre en carpeta nueva sin sobrescribir el proyecto.",
       "Orquestación por reglas explicables, presupuesto de roles y tareas secuenciales idempotentes.",
-      "Entrega Git en https://github.com/jylmdev-cyber/pallaquino-team.git, rama main; autor y committer Jimmy Lingan <jylmdev@gmail.com>."
+      "Entrega Git en https://github.com/jylmdev-cyber/pallaquino-team.git, rama main; autor y committer Jimmy Lingan <jylmdev@gmail.com>.",
+      "EIP 2.0 optativa por proyecto; API y estado v1, sin migrar ni romper la memoria clásica schema 1.",
+      "Ejecución paralela con reservas de archivos, workspaces por trabajo, leases y presupuestos; integración sujeta a gates y revisión.",
+      "Cuatro niveles de autonomía; permisos críticos siempre revisados y aprobaciones locales acotadas a política, proyecto, raíz y contenido.",
+      "La transferencia portable importa hechos y propuestas, nunca permisos, credenciales ni ejecución activa.",
+      "Los costos/latencias del catálogo son estimaciones declaradas; las lecciones no cambian políticas automáticamente."
     ],
     "tasks": [
       {
@@ -98,12 +103,31 @@
         ],
         "created_at": "2026-10-21T14:15:29+00:00",
         "updated_at": "2026-10-21T14:15:29+00:00"
+      },
+      {
+        "id": "T0005",
+        "title": "Engineering Intelligence Platform A–O",
+        "agent": "tech-lead",
+        "acceptance": "Núcleo portable, coordinación paralela, permisos, gates, recuperación y contratos con evidencia de 120 pruebas, wheel instalado y ZIP extraído.",
+        "depends_on": [],
+        "status": "done",
+        "evidence": [
+          "tests/test_eip.py",
+          "docs/platform/PLATFORM.md",
+          "docs/quality/VALIDATION_REPORT.md",
+          "docs/quality/evidence/tests-2.0.0.json",
+          "docs/quality/evidence/installed-wheel-2.0.0.json",
+          "docs/quality/evidence/extracted-zip-2.0.0.json"
+        ],
+        "created_at": "2026-10-21T21:29:36+00:00",
+        "updated_at": "2026-10-21T21:29:36+00:00"
       }
     ],
     "known_issues": [
-      "La prueba de symlink puede omitirse en Windows sin privilegios.",
-      "Modelos reales y CI Linux/macOS no ejecutados.",
-      "El proyecto no tiene repositorio Git; la auditoría autorizada no pudo ejecutarse."
+      "La prueba de symlink se omite en Windows sin privilegios.",
+      "Docker real, modelos reales, despliegues externos y CI Linux/macOS pendientes de validación.",
+      "El ejecutor nativo requiere código revisado y no es un sandbox para código hostil.",
+      "Los conectores cloud y runners de otros lenguajes requieren configuración y revisión específicas."
     ],
     "technical_debt": [
       "Runners distintos a unittest usan ejecución externa.",
@@ -121,6 +145,13 @@
         "authorized": true,
         "scope": "full",
         "status": "not_a_git_repository"
+      },
+      {
+        "at": "2026-10-21T21:29:36+00:00",
+        "authorized": true,
+        "scope": "full",
+        "status": "completed",
+        "evidence": "docs/quality/evidence/git-audit-before-eip.json"
       }
     ],
     "history": [
@@ -132,21 +163,28 @@
       "2026-10-21T13:56:05+00:00 T0003: done",
       "2026-10-21T14:15:29+00:00 creada T0004",
       "2026-10-21T14:15:29+00:00 T0004: done",
-      "2026-10-21T14:38:19+00:00 publicación inicial Git preparada por solicitud explícita del propietario."
+      "2026-10-21T14:38:19+00:00 publicación inicial Git preparada por solicitud explícita del propietario.",
+      "2026-10-21T21:29:36+00:00 implementada y validada Engineering Intelligence Platform 2.0; 120 pruebas, wheel aislado y ZIP extraído.",
+      "2026-10-21T21:29:36+00:00 creada T0005",
+      "2026-10-21T21:29:36+00:00 T0005: done"
     ],
     "next_actions": [
-      "Ejecutar doctor y pruebas en el entorno receptor.",
-      "Usar orchestrate para seleccionar roles; crear checkpoint antes de cambios importantes.",
-      "Exportar PROJECT_CONTEXT.json y revisar evidencias al cambiar de asistente."
+      "Inicializar EIP por proyecto y revisar gates, permisos y catálogo de modelos antes de ejecutar automatizaciones.",
+      "Validar Docker real y ejecutar la matriz CI en Linux/macOS antes de ampliar soporte certificado.",
+      "Configurar adaptadores de despliegue y modelos reales con permisos revisados; no guardar credenciales en el repositorio.",
+      "Exportar contexto universal para cambiar de asistente; revalidar evidencias y permisos en cada receptor."
     ],
-    "last_task": "T0004",
+    "last_task": "T0005",
     "files_involved": [
-      "tests/test_continuity.py",
-      "docs/quality/evidence/tests-1.1.0.json",
-      "docs/quality/evidence/installed-wheel-1.1.0.json"
+      "tests/test_eip.py",
+      "docs/platform/PLATFORM.md",
+      "docs/quality/VALIDATION_REPORT.md",
+      "docs/quality/evidence/tests-2.0.0.json",
+      "docs/quality/evidence/installed-wheel-2.0.0.json",
+      "docs/quality/evidence/extracted-zip-2.0.0.json"
     ],
-    "validated_checkpoint": "CP-20261021T141530203859Z-823bf07c",
-    "updated_at": "2026-10-21T14:38:19+00:00"
+    "validated_checkpoint": "CP-20261021T212937015381Z-5c63b6a4",
+    "updated_at": "2026-10-21T21:29:37+00:00"
   },
-  "state_sha256": "7d5f54b89ac735d1396332c0830859d6c796a27bf17585fb67565b1a4b26eb66"
+  "state_sha256": "876641140e4753517719c50baff56963f0b0d550145a1e3cc4e2fbd37932b674"
 }

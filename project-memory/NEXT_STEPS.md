@@ -1,5 +1,6 @@
 # Siguientes pasos
 
-- Ejecutar doctor y pruebas en el entorno receptor.
-- Usar orchestrate para seleccionar roles; crear checkpoint antes de cambios importantes.
-- Exportar PROJECT_CONTEXT.json y revisar evidencias al cambiar de asistente.
+- Inicializar EIP por proyecto y revisar gates, permisos y catálogo de modelos antes de ejecutar automatizaciones.
+- Validar Docker real y ejecutar la matriz CI en Linux/macOS antes de ampliar soporte certificado.
+- Configurar adaptadores de despliegue y modelos reales con permisos revisados; no guardar credenciales en el repositorio.
+- Exportar contexto universal para cambiar de asistente; revalidar evidencias y permisos en cada receptor.

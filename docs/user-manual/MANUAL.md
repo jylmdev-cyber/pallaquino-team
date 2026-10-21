@@ -1,5 +1,9 @@
 # Manual de usuario UASEK
 
+## Segunda capa 2.0
+
+[ENGINEERING INTELLIGENCE PLATFORM](../platform/PLATFORM.md) documenta PROJECT BRAIN, ejecución paralela, permisos, quality gates, recuperación, modelos, extensiones, múltiples proyectos y operaciones. Es optativa por proyecto: `python kit.py platform init`. En proyectos activados, `python kit.py --policy-preview test` muestra el recurso que debe autorizarse si el nivel exige aprobación. No se ejecuta código hostil nativamente ni se configuran despliegues reales por activar un nivel.
+
 ## Capacidades incorporadas en 1.1
 
 Consulte [contexto universal e importación](../continuity/CONTEXT_FORMAT.md), [checkpoints y recuperación](../continuity/CHECKPOINTS.md) y [orquestación adaptable](../workflows/ADAPTIVE_ORCHESTRATION.md) para comandos completos. `context export` conserva el handoff anterior y añade JSON universal sin configuración local del proveedor. `orchestrate --apply` selecciona roles, crea un checkpoint y materializa tareas sin invocar modelos. `checkpoint restore` recupera en una carpeta nueva para revisar e integrar.

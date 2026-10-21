@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-21T21:28:02+00:00",
+  "kind": "heuristic-static-scan",
+  "inspected": 267,
+  "findings": [],
+  "skipped": [
+    "project-memory/checkpoints/CP-20261021T141506062607Z-578f03e8/sources.zip",
+    "project-memory/checkpoints/CP-20261021T141530203859Z-823bf07c/sources.zip",
+    "project-memory/checkpoints/CP-20261021T144242366054Z-8b24cc3c/sources.zip"
+  ],
+  "limitations": "No es SAST completo, prueba de penetración ni garantía de ausencia de secretos. No analiza binarios, archivos >1 MB ni directorios excluidos. Nunca imprime valores detectados."
+}

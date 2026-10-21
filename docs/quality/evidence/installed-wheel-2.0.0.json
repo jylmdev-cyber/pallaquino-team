@@ -1,0 +1,214 @@
+{
+  "wheel": "C:\\jimdev\\team-pallaquino\\validation\\uasek-200-grucjhtb\\wheels\\universal_ai_software_kit-2.0.0-py3-none-any.whl",
+  "import": {
+    "version": "2.0.0",
+    "module": "C:\\jimdev\\team-pallaquino\\validation\\venv\\Lib\\site-packages\\uasek\\__init__.py",
+    "api": 1
+  },
+  "demo": {
+    "project": "C:\\jimdev\\team-pallaquino\\validation\\uasek-200-grucjhtb\\installed-demo",
+    "peak_parallel_workers": 2,
+    "jobs": {
+      "J-frontend": "done",
+      "J-backend": "done"
+    },
+    "operations": "C:\\jimdev\\team-pallaquino\\validation\\uasek-200-grucjhtb\\installed-demo\\OPERATIONS.html"
+  },
+  "status": {
+    "at": "2026-10-21T21:28:25+00:00",
+    "project_id": "33f16e08ef9b4cbaaf83b56cc6795017",
+    "project": {
+      "name": "Demostración Engineering Intelligence Platform",
+      "description": "",
+      "objectives": [],
+      "functional_requirements": [],
+      "non_functional_requirements": []
+    },
+    "policy": {
+      "schema_version": 1,
+      "level": "supervisado",
+      "max_workers": 4,
+      "max_attempts": 3,
+      "max_timeout_seconds": 60,
+      "max_jobs_per_run": 20,
+      "max_units_per_run": 100,
+      "native_reviewed_code": true,
+      "allowed_tools": [
+        "python"
+      ],
+      "allowed_container_images": [],
+      "container_network": "none"
+    },
+    "jobs": [
+      {
+        "id": "J-frontend",
+        "agent": "frontend-engineer",
+        "title": "Implementar frontend",
+        "status": "done",
+        "reason": null,
+        "attempts": 1,
+        "provider": "local-tool",
+        "model": "python",
+        "quality": {
+          "passed": true,
+          "checks": [
+            {
+              "id": "project:evidence",
+              "mandatory": true,
+              "passed": true,
+              "details": []
+            },
+            {
+              "id": "project:syntax",
+              "mandatory": true,
+              "passed": true,
+              "details": []
+            },
+            {
+              "id": "project:secrets",
+              "mandatory": true,
+              "passed": true,
+              "details": []
+            },
+            {
+              "id": "task:expected",
+              "mandatory": true,
+              "passed": true,
+              "details": []
+            },
+            {
+              "id": "task:regression",
+              "mandatory": true,
+              "passed": true,
+              "details": [
+                {
+                  "tool": "python",
+                  "args": [
+                    "-c",
+                    "from pathlib import Path; assert Path('frontend.txt').read_text().startswith(\"OK\")"
+                  ],
+                  "returncode": 0,
+                  "stdout": "",
+                  "stderr": "",
+                  "timed_out": false,
+                  "duration_seconds": 0.094
+                }
+              ]
+            }
+          ]
+        },
+        "execution_resource": "J-frontend:3da731f70ed951528a341a00b88c19d294815f808971b4e37379c027440e467e",
+        "diagnosis": {
+          "cause": null,
+          "proposal": null
+        },
+        "review_resource": null
+      },
+      {
+        "id": "J-backend",
+        "agent": "backend-engineer",
+        "title": "Implementar backend",
+        "status": "done",
+        "reason": null,
+        "attempts": 1,
+        "provider": "local-tool",
+        "model": "python",
+        "quality": {
+          "passed": true,
+          "checks": [
+            {
+              "id": "project:evidence",
+              "mandatory": true,
+              "passed": true,
+              "details": []
+            },
+            {
+              "id": "project:syntax",
+              "mandatory": true,
+              "passed": true,
+              "details": []
+            },
+            {
+              "id": "project:secrets",
+              "mandatory": true,
+              "passed": true,
+              "details": []
+            },
+            {
+              "id": "task:expected",
+              "mandatory": true,
+              "passed": true,
+              "details": []
+            },
+            {
+              "id": "task:regression",
+              "mandatory": true,
+              "passed": true,
+              "details": [
+                {
+                  "tool": "python",
+                  "args": [
+                    "-c",
+                    "from pathlib import Path; assert Path('backend.txt').read_text().startswith(\"OK\")"
+                  ],
+                  "returncode": 0,
+                  "stdout": "",
+                  "stderr": "",
+                  "timed_out": false,
+                  "duration_seconds": 0.094
+                }
+              ]
+            }
+          ]
+        },
+        "execution_resource": "J-backend:04b9a2192488979bb5a67d3cbafe2f1603f83ca25688d8157ac89c8b60ade21c",
+        "diagnosis": {
+          "cause": null,
+          "proposal": null
+        },
+        "review_resource": null
+      }
+    ],
+    "runs": [
+      {
+        "id": "RUN-390d10a833814729",
+        "status": "finished",
+        "at": "2026-10-21T21:28:23+00:00",
+        "attempts_reserved": 2,
+        "units_reserved": 2,
+        "max_units": 100,
+        "max_workers": 2,
+        "max_seconds": 120,
+        "finished_at": "2026-10-21T21:28:24+00:00",
+        "peak_parallel_workers": 2,
+        "jobs": {
+          "J-frontend": "review",
+          "J-backend": "review"
+        }
+      }
+    ],
+    "resources": {
+      "attempts": 2,
+      "units_reserved": 2,
+      "model_calls": 0
+    },
+    "documentation": {
+      "changed": [],
+      "missing": [],
+      "stale_documentation": [],
+      "consistent": true,
+      "relations": []
+    },
+    "audits": [],
+    "last_tests": {},
+    "lessons": [],
+    "extensions": []
+  },
+  "audit": {
+    "events_verified": 20,
+    "last_sha256": "48308d2e4e737bc29903c4c74ce5178eb6c7f37138712c95c13e31a2bede6111",
+    "limits": "Integridad por hash; no es una firma ni protección frente al administrador del equipo."
+  },
+  "build_log": "Processing .\\.\n  Installing build dependencies: started\n  Installing build dependencies: finished with status 'done'\n  Getting requirements to build wheel: started\n  Getting requirements to build wheel: finished with status 'done'\n  Preparing metadata (pyproject.toml): started\n  Preparing metadata (pyproject.toml): finished with status 'done'\nBuilding wheels for collected packages: universal-ai-software-kit\n  Building wheel for universal-ai-software-kit (pyproject.toml): started\n  Building wheel for universal-ai-software-kit (pyproject.toml): finished with status 'done'\n  Created wheel for universal-ai-software-kit: filename=universal_ai_software_kit-2.0.0-py3-none-any.whl size=172902 sha256=1f1679c4e062a5ac902f05537f56ae3b5f98a5f1cec2eec177a813130a734dd0\n  Stored in directory: C:\\Users\\ESTADISTICA\\AppData\\Local\\Temp\\pip-ephem-wheel-cache-xpxz468t\\wheels\\cb\\7b\\57\\5ed3146dbb93cffe1834312b1bc6f9416f349a555af23d154d\nSuccessfully built universal-ai-software-kit\n",
+  "install_log": "Processing c:\\jimdev\\team-pallaquino\\validation\\uasek-200-grucjhtb\\wheels\\universal_ai_software_kit-2.0.0-py3-none-any.whl\nInstalling collected packages: universal-ai-software-kit\n  Attempting uninstall: universal-ai-software-kit\n    Found existing installation: universal-ai-software-kit 1.1.0\n    Uninstalling universal-ai-software-kit-1.1.0:\n      Successfully uninstalled universal-ai-software-kit-1.1.0\nSuccessfully installed universal-ai-software-kit-2.0.0\n"
+}

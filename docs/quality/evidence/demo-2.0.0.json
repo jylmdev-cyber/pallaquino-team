@@ -1,0 +1,9 @@
+{
+  "project": "C:\\jimdev\\team-pallaquino\\validation\\uasek-200-grucjhtb\\source-demo",
+  "peak_parallel_workers": 2,
+  "jobs": {
+    "J-frontend": "done",
+    "J-backend": "done"
+  },
+  "operations": "C:\\jimdev\\team-pallaquino\\validation\\uasek-200-grucjhtb\\source-demo\\OPERATIONS.html"
+}

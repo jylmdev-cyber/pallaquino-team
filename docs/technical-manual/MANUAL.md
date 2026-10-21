@@ -1,5 +1,9 @@
 # Manual técnico
 
+## Engineering Intelligence Platform 2.0
+
+La segunda capa vive en `uasek/eip/` con módulos separados de estado/auditoría, gobierno, cerebro, mapa estático, routing, adaptadores, extensiones, proyectos, gates, ejecución y operaciones. El API/estado de plataforma es v1 y no altera schema 1 de PROJECT MEMORY. Los contratos y condiciones de integración están en [PLATFORM](../platform/PLATFORM.md). Las aprobaciones/workspaces no se exportan; trabajos importados son propuestas, no permisos o ejecuciones activas.
+
 ## Extensiones 1.1 y compatibilidad
 
 Memoria local mantiene schema 1. `context_format.py` define el contrato de intercambio universal v1, con digest canónico y validación anterior a importar; conserva el proveedor local y separa instrucciones del adaptador. `checkpoints.py` captura estado y fuentes seleccionadas, verifica integridad y prepara recuperación fuera del proyecto. `orchestration.py` aplica reglas versionadas para limitar roles y crear tareas secuenciales de forma idempotente, con checkpoint previo. No introduce dependencias de ejecución ni llamadas a modelos para planificar. Guías: [formato](../continuity/CONTEXT_FORMAT.md), [checkpoints](../continuity/CHECKPOINTS.md), [orquestación](../workflows/ADAPTIVE_ORCHESTRATION.md).

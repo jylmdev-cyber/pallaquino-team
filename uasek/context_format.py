@@ -51,8 +51,12 @@ def export(root, dry_run=False):
     target = safe_path(root, CONTEXT_PATH)
     if not dry_run:
         write_json(target, payload)
-    return {'path': str(target), 'format': FORMAT, 'format_version': VERSION,
-            'state_sha256': payload['state_sha256'], 'dry_run': dry_run}
+    result = {'path': str(target), 'format': FORMAT, 'format_version': VERSION,
+              'state_sha256': payload['state_sha256'], 'dry_run': dry_run}
+    from .eip import store, transfer
+    if store.location(root, 'state.json').exists():
+        result['platform_context'] = transfer.export(root, dry_run)
+    return result
 
 
 def import_context(root, filename, replace=False, dry_run=False):

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:uasek:engineering-job:1",
+  "title": "Engineering Intelligence Platform job v1",
+  "type": "object",
+  "required": ["id", "title", "acceptance"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^J-[a-zA-Z0-9_-]{1,64}$"},
+    "title": {"type": "string", "minLength": 1},
+    "acceptance": {"type": "string", "minLength": 1},
+    "agent": {"type": "string", "default": "auto"},
+    "skills": {"type": "array", "items": {"type": "string"}},
+    "reads": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "writes": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true},
+    "depends_on": {"type": "array", "items": {"type": "string"}},
+    "command": {"type": ["object", "null"]},
+    "repair": {"type": ["object", "null"]},
+    "model_requirements": {"type": ["object", "null"]},
+    "prompt_file": {"type": ["string", "null"]},
+    "environment": {"enum": ["development", "test", "staging", "production"]},
+    "isolation": {"enum": ["native", "container"]},
+    "reviewed_code": {"type": "boolean", "default": false},
+    "image": {"type": ["string", "null"]},
+    "timeout_seconds": {"type": "integer", "minimum": 1},
+    "max_attempts": {"type": "integer", "minimum": 1},
+    "budget_units": {"type": "number", "minimum": 0},
+    "memory_task": {"type": ["string", "null"]},
+    "gates": {"type": "array"},
+    "agent_selection": {"type": ["object", "null"]}
+  },
+  "additionalProperties": false
+}

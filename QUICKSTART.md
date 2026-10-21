@@ -1,5 +1,7 @@
 # Inicio rápido
 
+Para la segunda capa, consultar [ENGINEERING INTELLIGENCE PLATFORM](docs/platform/PLATFORM.md). La demostración reproducible `python examples/platform/demo.py --destination ../demo-eip --approve-demo` verifica dos trabajos independientes y genera un centro de operaciones local. Una plataforma inicializada añade controles de permisos a los comandos anteriores.
+
 Para seleccionar roles sin invocar modelos: `python kit.py orchestrate --request "Agregar endpoint API"`. Añada `--apply` para crear tareas y un checkpoint previo. Antes de una edición importante hecha fuera del kit, use `python kit.py checkpoint create --label "Antes del cambio" --expected "Resultado observable"`. Véase [continuidad 1.1](docs/continuity/CONTEXT_FORMAT.md).
 
 Requiere Python 3.11+; se comprobó localmente con Python 3.12.10 en Windows. Git es opcional salvo para `audit`. Extraiga el ZIP y abra una terminal dentro de `UNIVERSAL-AI-SOFTWARE-KIT`.

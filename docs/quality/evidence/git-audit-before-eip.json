@@ -1,0 +1,164 @@
+{
+  "at": "2026-10-21T14:42:41+00:00",
+  "mode": "full",
+  "read_only": true,
+  "checks": [
+    {
+      "command": [
+        "git",
+        "--no-pager",
+        "--no-optional-locks",
+        "-c",
+        "core.fsmonitor=false",
+        "-c",
+        "core.untrackedCache=false",
+        "-c",
+        "log.showSignature=false",
+        "-c",
+        "core.hooksPath=",
+        "-c",
+        "diff.external=",
+        "status",
+        "--short",
+        "--branch"
+      ],
+      "returncode": 0,
+      "stdout": "## main...origin/main\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-pager",
+        "--no-optional-locks",
+        "-c",
+        "core.fsmonitor=false",
+        "-c",
+        "core.untrackedCache=false",
+        "-c",
+        "log.showSignature=false",
+        "-c",
+        "core.hooksPath=",
+        "-c",
+        "diff.external=",
+        "branch",
+        "--show-current"
+      ],
+      "returncode": 0,
+      "stdout": "main\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-pager",
+        "--no-optional-locks",
+        "-c",
+        "core.fsmonitor=false",
+        "-c",
+        "core.untrackedCache=false",
+        "-c",
+        "log.showSignature=false",
+        "-c",
+        "core.hooksPath=",
+        "-c",
+        "diff.external=",
+        "log",
+        "-5",
+        "--oneline"
+      ],
+      "returncode": 0,
+      "stdout": "43f0cfd feat: add UASEK 1.1 software engineering kit\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-pager",
+        "--no-optional-locks",
+        "-c",
+        "core.fsmonitor=false",
+        "-c",
+        "core.untrackedCache=false",
+        "-c",
+        "log.showSignature=false",
+        "-c",
+        "core.hooksPath=",
+        "-c",
+        "diff.external=",
+        "diff",
+        "--no-ext-diff",
+        "--no-textconv",
+        "--name-only",
+        "--diff-filter=U"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "--no-pager",
+        "--no-optional-locks",
+        "-c",
+        "core.fsmonitor=false",
+        "-c",
+        "core.untrackedCache=false",
+        "-c",
+        "log.showSignature=false",
+        "-c",
+        "core.hooksPath=",
+        "-c",
+        "diff.external=",
+        "ls-files",
+        "--others",
+        "--ignored",
+        "--exclude-standard"
+      ],
+      "returncode": 0,
+      "stdout": ".uasek/events.jsonl\n.uasek/last-test.json\nbuild/lib/uasek/__init__.py\nbuild/lib/uasek/checkpoints.py\nbuild/lib/uasek/cli.py\nbuild/lib/uasek/common.py\nbuild/lib/uasek/context_format.py\nbuild/lib/uasek/memory.py\nbuild/lib/uasek/operations.py\nbuild/lib/uasek/orchestration.py\nbuild/lib/uasek/providers.py\nbuild/lib/uasek/resources/configs/agents.json\nbuild/lib/uasek/resources/configs/catalog.json\nbuild/lib/uasek/resources/configs/context.schema.json\nbuild/lib/uasek/resources/configs/orchestration.json\nbuild/lib/uasek/resources/configs/providers.json\nbuild/lib/uasek/resources/templates/api/openapi.json\nbuild/lib/uasek/resources/templates/architecture/ADR.md\nbuild/lib/uasek/resources/templates/database/MIGRATION_PLAN.md\nbuild/lib/uasek/resources/templates/documentation/ACCEPTANCE_CRITERIA.md\nbuild/lib/uasek/resources/templates/documentation/API_DOCUMENTATION.md\nbuild/lib/uasek/resources/templates/documentation/ARCHITECTURE_DECISIONS.md\nbuild/lib/uasek/resources/templates/documentation/BACKUP_RECOVERY.md\nbuild/lib/uasek/resources/templates/documentation/BUSINESS_REQUIREMENTS.md\nbuild/lib/uasek/resources/templates/documentation/BUSINESS_RULES.md\nbuild/lib/uasek/resources/templates/documentation/CHANGELOG.md\nbuild/lib/uasek/resources/templates/documentation/CODING_STANDARDS.md\nbuild/lib/uasek/resources/templates/documentation/COMPONENT_DIAGRAM.md\nbuild/lib/uasek/resources/templates/documentation/DATABASE_GUIDE.md\nbuild/lib/uasek/resources/templates/documentation/DATA_MODEL.md\nbuild/lib/uasek/resources/templates/documentation/DEPLOYMENT_GUIDE.md\nbuild/lib/uasek/resources/templates/documentation/DEVELOPMENT_GUIDE.md\nbuild/lib/uasek/resources/templates/documentation/ENVIRONMENT_SETUP.md\nbuild/lib/uasek/resources/templates/documentation/FUNCTIONAL_REQUIREMENTS.md\nbuild/lib/uasek/resources/templates/documentation/INTEGRATION_DESIGN.md\nbuild/lib/uasek/resources/templates/documentation/MAINTENANCE_GUIDE.md\nbuild/lib/uasek/resources/templates/documentation/MONITORING_GUIDE.md\nbuild/lib/uasek/resources/templates/documentation/NEXT_STEPS.md\nbuild/lib/uasek/resources/templates/documentation/NON_FUNCTIONAL_REQUIREMENTS.md\nbuild/lib/uasek/resources/templates/documentation/PROJECT_OVERVIEW.md\nbuild/lib/uasek/resources/templates/documentation/PROJECT_STATUS.md\nbuild/lib/uasek/resources/templates/documentation/QUALITY_REPORT.md\nbuild/lib/uasek/resources/templates/documentation/ROADMAP.md\nbuild/lib/uasek/resources/templates/documentation/SECURITY_CHECKLIST.md\nbuild/lib/uasek/resources/templates/documentation/SYSTEM_ARCHITECTURE.md\nbuild/lib/uasek/resources/templates/documentation/TECH_STACK.md\nbuild/lib/uasek/resources/templates/documentation/TEST_CASES.md\nbuild/lib/uasek/resources/templates/documentation/TEST_STRATEGY.md\nbuild/lib/uasek/resources/templates/documentation/TROUBLESHOOTING.md\nbuild/lib/uasek/resources/templates/documentation/USER_STORIES.md\nbuild/lib/uasek/resources/templates/infrastructure/DEPLOYMENT_REVIEW.md\nbuild/lib/uasek/resources/templates/systems/accounting/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/agriculture/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/attendance/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/construction/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/contracts/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/crm/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/distribution/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/documents/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/ecommerce/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/education/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/elearning/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/enrollment/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/equipment/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/erp/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/fleet/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/healthcare/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/helpdesk/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/hotel/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/human-resources/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/identity/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/inventory/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/library/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/logistics/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/multitenant-saas/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/municipal/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/projects/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/real-estate/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/reservations/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/restaurant/SYSTEM.md\nbuild/lib/uasek/resources/templates/systems/sales/SYSTEM.md\nbuild/lib/uasek/resources/workflows/DEVELOPMENT.md\nbuild/lib/uasek/resources/workflows/RESULT_CONTRACT.json\ntests/__pycache__/test_continuity.cpython-312.pyc\ntests/__pycache__/test_core.cpython-312.pyc\ntests/__pycache__/test_workflow.cpython-312.pyc\nuasek/__pycache__/__init__.cpython-312.pyc\nuasek/__pycache__/checkpoints.cpython-312.pyc\nuasek/__pycache__/cli.cpython-312.pyc\nuasek/__pycache__/common.cpython-312.pyc\nuasek/__pycache__/context_format.cpython-312.pyc\nuasek/__pycache__/memory.cpython-312.pyc\nuasek/__pycache__/operations.cpython-312.pyc\nuasek/__pycache__/orchestration.cpython-312.pyc\nuasek/__pycache__/providers.cpython-312.pyc\nuniversal_ai_software_kit.egg-info/PKG-INFO\nuniversal_ai_software_kit.egg-info/SOURCES.txt\nuniversal_ai_software_kit.egg-info/dependency_links.txt\nuniversal_ai_software_kit.egg-info/entry_points.txt\nuniversal_ai_software_kit.egg-info/top_level.txt\n",
+      "stderr": ""
+    }
+  ],
+  "inventory": {
+    "root": "C:\\jimdev\\team-pallaquino\\UNIVERSAL-AI-SOFTWARE-KIT",
+    "files": 246,
+    "extensions": {
+      ".example": 1,
+      "(sin extensión)": 2,
+      ".in": 1,
+      ".md": 176,
+      ".py": 31,
+      ".toml": 1,
+      ".yml": 1,
+      ".txt": 1,
+      ".json": 30,
+      ".zip": 2
+    },
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "memory_present": true,
+    "note": "Inventario; no ejecuta código ni deduce requisitos de negocio."
+  },
+  "security": {
+    "at": "2026-10-21T14:42:41+00:00",
+    "kind": "heuristic-static-scan",
+    "inspected": 244,
+    "findings": [],
+    "skipped": [
+      "project-memory/checkpoints/CP-20261021T141506062607Z-578f03e8/sources.zip",
+      "project-memory/checkpoints/CP-20261021T141530203859Z-823bf07c/sources.zip"
+    ],
+    "limitations": "No es SAST completo, prueba de penetración ni garantía de ausencia de secretos. No analiza binarios, archivos >1 MB ni directorios excluidos. Nunca imprime valores detectados."
+  },
+  "tests": "No ejecutadas: auditar no ejecuta código del repositorio.",
+  "dependencies": "Inventario local; OSV requiere dependency --online explícito.",
+  "tracked_sensitive_paths": [],
+  "commit_convention_sample": "feat: add UASEK 1.1 software engineering kit\n",
+  "ci_files": [
+    ".github/workflows/validate.yml"
+  ],
+  "limits": "No escanea historial de blobs, submódulos ni remotos; full amplía metadatos locales, no es auditoría exhaustiva."
+}

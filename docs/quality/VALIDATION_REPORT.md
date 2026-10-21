@@ -1,48 +1,42 @@
-# Reporte final de validación — UASEK 1.1.0
+# Reporte de validación — UASEK 2.0.0
 
-Fecha: 2026-10-21. Entorno: Windows, Python 3.12.10. Memoria local compatible con schema 1; nuevo contexto de intercambio v1. La entrega 1.0 y su [reporte original](VALIDATION_REPORT_1.0.0.md) se conservan.
+Fecha: 2026-10-21. Entorno ejecutado: Windows, Python 3.12.10. Núcleo sin dependencias externas de ejecución. Memoria clásica schema 1; API/estado de plataforma v1; ambos contextos universales v1. Se conservan los reportes [1.0](VALIDATION_REPORT_1.0.0.md) y [1.1](VALIDATION_REPORT_1.1.0.md).
 
-## Resultado comprobado
-
-| Verificación | Resultado | Evidencia |
+| Verificación ejecutada | Resultado | Evidencia |
 |---|---|---|
-| Suite completa | 72 pruebas: 71 pasaron, 1 omitida por permisos de symlink en Windows | [tests-1.1.0](evidence/tests-1.1.0.json) |
-| Código extraído del ZIP | Misma suite y misma huella de fuentes que el checkout; dos checkpoints íntegros | [extracted-zip-1.1.0](evidence/extracted-zip-1.1.0.json) |
-| Wheel 1.1 instalado en venv aislado | Nueve operaciones comprobadas: inicializar, planificar, reusar plan, verificar checkpoint, exportar, preparar receptor, cambiar proveedor, importar y consultar estado | [installed-wheel-1.1.0](evidence/installed-wheel-1.1.0.json) |
-| Skills | 31 válidas estructuralmente tras actualizar instrucciones de continuidad | [skills-1.1.0](evidence/skills-1.1.0.json) |
-| Escaneo heurístico | Sin hallazgos altos; se repite antes de empaquetar | [security-1.1.0](evidence/security-1.1.0.json) |
-| Auditoría Git completa autorizada | No pudo ejecutarse: la carpeta no pertenece a un repositorio Git. No se creó uno ni se declara una auditoría exitosa | [git-audit-1.1.0](evidence/git-audit-1.1.0.json) |
-| Base anterior recuperable | Checkpoint reconstruido desde los bytes del ZIP original 1.0, preservando su procedencia y reporte previo de pruebas | [baseline-1.1.0](evidence/baseline-1.1.0.json) |
+| Suite completa mediante CLI | 120 pruebas, 119 aprobadas y 1 omitida por privilegios de symlink en Windows | [tests](evidence/tests-2.0.0.json) |
+| Demostración desde fuentes | Dos procesos independientes, máximo paralelo 2, ambos integrados como done tras gates y aprobaciones | [demo](evidence/demo-2.0.0.json) |
+| Wheel 2.0 instalado en venv aislado | Importación desde site-packages, API v1, misma demo paralela, CLI de estado y cadena de auditoría verificada | [wheel](evidence/installed-wheel-2.0.0.json) |
+| ZIP de ensayo extraído | Hashes de todos los archivos correctos, misma huella de fuentes, 120 pruebas aprobadas con la misma omisión, tres checkpoints íntegros | [ZIP extraído](evidence/extracted-zip-2.0.0.json) |
+| Enlaces Markdown locales | 206 referencias verificadas antes del reporte final; se vuelven a comprobar en el ZIP final | [ZIP extraído](evidence/extracted-zip-2.0.0.json) |
+| Escaneo heurístico | Sin hallazgos; los archivos ZIP internos no se escanean como texto y se verifican por sus manifests de checkpoint | [seguridad](evidence/security-2.0.0.json) |
+| Auditoría Git completa autorizada previa al cambio | main limpia y sincronizada con origin/main; commit inicial presente | [auditoría](evidence/git-audit-before-eip.json) |
 
-Resumen e identificadores de checkpoints: [summary-1.1.0](evidence/summary-1.1.0.json).
+## Plataforma implementada y cobertura
 
-## Tres mejoras implementadas
+La [guía EIP](../platform/PLATFORM.md) relaciona las capacidades A–O con módulos, formatos, comandos y límites. Incluye PROJECT BRAIN, búsqueda léxica con procedencia, transferencia sin importar autorizaciones, mapa Python AST y adaptador léxico JS/TS, coordinación con dependencias y reservas de archivos, presupuestos, cuatro niveles de autonomía, permisos acotados de uso único, quality gates obligatorios, revisión e integración, recuperación, modelos declarados, extensiones revisadas, registro multiproyecto, trazabilidad y HTML local opcional.
 
-**Memoria independiente del modelo.** Exportación JSON versionada y checksum canónico; importación validada antes de escribir; conservación del proveedor local receptor; rechazo de versiones desconocidas, corrupción y rutas fuera de alcance. Se informa evidencia no disponible localmente. Las instrucciones de proveedores se generan en archivos separados del estado universal. No se depende de prompts internos iguales entre aplicaciones. [Formato y comandos](../continuity/CONTEXT_FORMAT.md).
+Las 48 pruebas nuevas comprueban procesos realmente solapados y serialización de archivos compartidos; dependencias y presupuestos; aprobación ligada a bytes de entradas y raíz local; cambios entre reserva y ejecución; rechazo de candidatos alterados; gates de regresión y cierre de tareas; permisos críticos incluso en autonomía máxima; reintentos limitados y reparación declarada; timeout; leases y resultados tardíos; fallo parcial de integración simulado mediante error real de escritura y restauración en carpeta nueva; aislamiento de proyectos y clones; corrupción de auditoría; documentación desactualizada; lecciones con evidencia; transferencia neutral; contratos y versiones; adaptador de proceso con permisos; rechazo seguro sin Docker; inferencia local mediante fixtures. Se conservan las 72 pruebas de compatibilidad del núcleo anterior.
 
-**Checkpoints recuperables.** Captura de fuentes de texto seleccionadas, memoria, decisiones, expectativa y pruebas disponibles. Distingue pruebas frescas, obsoletas o ausentes. Verificación de metadatos, archivo ZIP y hashes; rechazo de snapshots alterados y rutas adversas. Recuperación real en carpeta nueva sin tocar el proyecto actual. Checkpoint automático antes de aplicar un plan o sustituir memoria por importación. Para editar fuera del kit, el responsable debe crearlo antes del cambio. [Guía](../continuity/CHECKPOINTS.md).
+La demo autoriza únicamente scripts locales conocidos. No conecta modelos, cambia políticas ni despliega un producto. Los módulos frontend/backend de la demo son fixtures de texto para reproducir coordinación, revisión y regresión.
 
-**Orquestación adaptable.** Reglas locales y versionadas seleccionan roles según tipo, señales y archivos, con presupuesto predeterminado de cuatro. Documentación sencilla usa un solo perfil. Se explican selecciones y roles diferidos; no se permite aplicar un presupuesto que omita controles QA/seguridad requeridos. Planes persistentes e idempotentes, tareas con dependencias y ejecución secuencial por defecto. La planificación no llama modelos ni ejecuta sus respuestas. [Guía](../workflows/ADAPTIVE_ORCHESTRATION.md).
+## Límites efectivamente pendientes
 
-## Cobertura y límites
+No se ejecutaron Docker real, modelos reales, APIs cloud, despliegues externos ni CI Linux/macOS. El pipeline versionado permite ejecutar la suite en esos sistemas, pero su configuración no es evidencia de ejecución. Los tests de modelos y producción usan fixtures. Otros lenguajes requieren sus herramientas específicas mediante conectores revisados; no se declara análisis semántico completo fuera de Python.
 
-Las nuevas pruebas reproducen transferencia de decisiones/tareas entre proveedores distintos, pérdida o alteración del contexto, preservación de requisitos existentes, evidencia ausente, recuperación de código anterior tras romper el actual, corrupción de checkpoints, traversal ZIP, dry-run sin escrituras y planes sin duplicación.
+El ejecutor nativo exige código revisado y no es un sandbox para código hostil. El contrato Docker requiere imagen aprobada por digest, ausencia de red y límites; falla sin runtime y nunca recurre al ejecutor nativo. Debe validarse con el daemon real antes de utilizar código no confiable. Las aprobaciones identifican revisores declarados localmente; no son autenticación corporativa. El encadenamiento de hashes detecta corrupción, no autentica administradores. El control de aplicación no impide cambios directos por el propietario del sistema de archivos.
 
-El contexto no copia código ni prueba la veracidad de hechos importados. Un digest detecta alteraciones accidentales, no autentica al remitente. Los checkpoints son de fuentes de texto: omiten secretos detectados, binarios, bases y archivos grandes; consultar siempre `omitted`. La recuperación requiere ejecutar pruebas de nuevo en el entorno destino.
-
-La selección de roles es por reglas explicables, no comprensión semántica completa. Los criterios del plan requieren revisión según el negocio antes de implementar funciones complejas. No se lanzan agentes autónomos ni se concede autorización por planear una tarea. No se interceptan cambios arbitrarios de IDEs.
-
-No se ejecutaron modelos reales, API cloud, CI remota ni Linux/macOS. Se mantienen transferencias manuales cloud y adaptador Ollama local de texto. Las pruebas de transporte de modelos usan fixtures. Las consultas reales PyPI/OSV de 1.0 permanecen documentadas en el reporte anterior; no se repitieron al cambiar funcionalidades locales.
-
-El ZIP incluye ambas bases recuperables y un manifiesto de archivos. La validación completa de la copia extraída se realizó antes de añadir este informe final; esos cambios finales son documentación, no fuentes/configuración. El cierre verifica otra vez la huella de código, los hashes del ZIP y los checkpoints. El checksum del comprimido se entrega al lado en `.zip.sha256`.
+El catálogo de modelos usa disponibilidad, costos y latencia declarados, no precios o facturación en vivo. Las APIs cloud siguen usando transferencia manual o adaptadores externos por implementar/revisar. Los conectores permiten comandos reproducibles de desarrollo, pruebas, staging y producción sujetos a permisos; no se provisiona infraestructura cloud. Los checkpoints son respaldos de fuentes seleccionadas, no backups de bases de datos o producción. La integración es atómica por archivo; un fallo entre archivos exige revisar journal y checkpoint.
 
 ## Reproducir
 
 ```console
+python kit.py doctor
 python kit.py test
-python kit.py context export
+python examples/platform/demo.py --destination ../demo-eip --approve-demo
 python kit.py checkpoint list
-python kit.py orchestrate --request "Documentar README"
 ```
 
-Para crear, importar o recuperar con dry-run y parámetros completos, consultar las guías enlazadas y el [manual](../user-manual/MANUAL.md).
+La plataforma es optativa por proyecto. Inicializar con `platform init` aplica la política supervisada, también a los comandos anteriores; consultar `--policy-preview` y la guía de aprobaciones. El código fuente del kit mantiene esta activación explícita para conservar el flujo de instalación previo.
+
+La distribución final contiene un checkpoint adicional de cierre, manifiesto SHA-256 por archivo y checksum externo del ZIP. Se comprueban otra vez hashes, enlaces y huella de fuentes después de cerrar documentación/memoria; estas últimas escrituras no modifican el código probado. La copia de ensayo conserva su evidencia separada.

@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "at": "2026-10-21T21:29:37+00:00",
+  "tests_ran": 120,
+  "passed": 119,
+  "skipped": 1,
+  "checkpoint": {
+    "id": "CP-20261021T212937015381Z-5c63b6a4",
+    "files": 269,
+    "omitted": [],
+    "tests_fresh_and_passing": true,
+    "source_fingerprint": "661b49807141803f51b0f8829679ffa0c12b22471cf4a24757b61749c2351010",
+    "dry_run": false
+  },
+  "source_fingerprint": "661b49807141803f51b0f8829679ffa0c12b22471cf4a24757b61749c2351010",
+  "not_executed": [
+    "Docker real",
+    "modelos reales",
+    "API cloud",
+    "despliegues externos",
+    "CI Linux/macOS"
+  ]
+}

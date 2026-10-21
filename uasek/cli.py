@@ -20,6 +20,8 @@ def parser():
     p.add_argument('--root', default='.', help='Proyecto objetivo (predeterminado: carpeta actual). Colocar antes del subcomando.')
     p.add_argument('--output', help='Guardar resultado JSON redactado; no sobrescribe archivos existentes.')
     p.add_argument('--verbose', action='store_true')
+    p.add_argument('--platform-approval', help='Aprobación acotada de EIP para comandos anteriores cuando el nivel la exija.')
+    p.add_argument('--policy-preview', action='store_true', help='Mostrar permiso y recurso del comando sin ejecutarlo.')
     sub = p.add_subparsers(dest='command')
 
     def command(name, help_text, dry=False):
@@ -94,6 +96,8 @@ def parser():
     agent.add_argument('--task')
     agent.add_argument('--result', help='JSON AgentResult; valida estructura y existencia de artefactos, sin cerrar tareas.')
     command('catalog', 'Listar 30 referencias de sistemas por rubro.')
+    from .eip.cli import attach
+    attach(sub)
     return p
 
 
@@ -144,6 +148,9 @@ def context_update(root, filename, dry_run):
 def dispatch(args, root):
     command = args.command
     dry = getattr(args, 'dry_run', False)
+    if command == 'platform':
+        from .eip.cli import dispatch as platform_dispatch
+        return platform_dispatch(args, root)
     if command == 'init':
         if args.existing and args.template:
             raise KitError('--existing no admite --template; revise la referencia antes de incorporarla.')
@@ -230,6 +237,8 @@ def dispatch(args, root):
 
 
 def exit_code(command, result):
+    if command == 'platform' and isinstance(result, dict):
+        return result.get('exit_code', 0)
     if command == 'test':
         return result.get('returncode', 0)
     if command == 'security' and any(f['severity'] == 'high' for f in result['findings']):
@@ -264,11 +273,17 @@ def main(argv=None):
     try:
         if not root.is_dir():
             raise KitError('--root debe ser una carpeta existente.')
+        from .eip.cli import legacy_scope, authorize_legacy
+        scope = legacy_scope(args, root)
+        if args.policy_preview:
+            print(json.dumps(scope or {'permission': 'read', 'resource': None}, ensure_ascii=False, indent=2))
+            return 0
         output_path = None
         if args.output:
             output_path = Path(args.output).resolve()
             if output_path.exists():
                 raise KitError('--output ya existe; no se sobrescribe.')
+        authorize_legacy(root, scope, args.platform_approval)
         result = dispatch(args, root)
         text = json.dumps(redact_data(result), ensure_ascii=False, indent=2)
         if output_path and not getattr(args, 'dry_run', False):

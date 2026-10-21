@@ -1,6 +1,18 @@
-# UNIVERSAL AI SOFTWARE ENGINEERING KIT — UASEK 1.1.0
+# UNIVERSAL AI SOFTWARE ENGINEERING KIT — UASEK 2.0.0
 
 Infraestructura operativa en español para coordinar ingeniería asistida por IA: tareas con dependencias, contratos de agentes, memoria portable, herramientas de inspección, pruebas, respaldo y continuidad. Núcleo Python sin dependencias externas de ejecución.
+
+**ENGINEERING INTELLIGENCE PLATFORM** añade PROJECT BRAIN, trabajos paralelos con reservas de archivos, cuatro niveles de autonomía, quality gates obligatorios, recuperación, selección de modelos, extensiones revisadas, gestión multiproyecto y centro de operaciones HTML opcional. [Manual de plataforma y límites](docs/platform/PLATFORM.md).
+
+```console
+python kit.py platform init
+python kit.py platform plan --request "Agregar API de autenticación"
+python kit.py platform map
+python kit.py platform search --query "arquitectura"
+python examples/platform/demo.py --destination ../demo-eip --approve-demo
+```
+
+La plataforma es optativa por proyecto. Una vez inicializada, los comandos de escritura/ejecución respetan su política; consulte `--policy-preview` y aprobaciones. La demostración usa dos scripts locales conocidos, permisos explícitos y gates; no despliega sistemas ni requiere un modelo.
 
 Desde 1.1: [contexto universal importable](docs/continuity/CONTEXT_FORMAT.md), [checkpoints recuperables](docs/continuity/CHECKPOINTS.md) y [selección automática y limitada de roles](docs/workflows/ADAPTIVE_ORCHESTRATION.md). Las instrucciones de proveedores se mantienen separadas de los hechos del proyecto.
 

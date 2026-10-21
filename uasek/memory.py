@@ -142,6 +142,8 @@ def update_task(root, task_id, status, evidence=(), dry_run=False):
                 evidence_paths.append(path.relative_to(Path(root).resolve()).as_posix())
             if not evidence_paths:
                 raise KitError('Terminar requiere --evidence con archivos verificables; el revisor valida su contenido.')
+            from .eip.quality import require_completion
+            require_completion(root, task, evidence_paths)
         task.update(status=status, updated_at=now(), evidence=evidence_paths)
         if not dry_run:
             state['last_task'] = task_id

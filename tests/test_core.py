@@ -426,9 +426,9 @@ class ProviderAndContracts(unittest.TestCase):
                         'deliverables','restrictions','acceptance_criteria','communication','escalation','handoff'):
                 self.assertTrue(contract[key])
 
-    def test_all_16_tool_entrypoints_show_help(self):
+    def test_all_17_tool_entrypoints_show_help(self):
         tools = sorted((KIT_ROOT / 'tools').glob('*.py'))
-        self.assertEqual(len(tools), 16)
+        self.assertEqual(len(tools), 17)
         for tool in tools:
             result = subprocess.run([sys.executable, str(tool), '--help'], capture_output=True, timeout=15)
             self.assertEqual(result.returncode, 0, tool.name)

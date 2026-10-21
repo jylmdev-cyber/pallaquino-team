@@ -1,11 +1,11 @@
 {
   "format": "uasek.project-context",
   "format_version": 1,
-  "exported_at": "2026-10-21T21:29:37+00:00",
+  "exported_at": "2026-10-21T23:39:06+00:00",
   "state": {
     "schema_version": 1,
     "project": {
-      "name": "UNIVERSAL AI SOFTWARE ENGINEERING KIT",
+      "name": "PALLAQUINO TEAM",
       "description": "Infraestructura local portable de coordinación y continuidad de ingeniería asistida por IA.",
       "objectives": [],
       "functional_requirements": [],
@@ -38,7 +38,12 @@
       "Ejecución paralela con reservas de archivos, workspaces por trabajo, leases y presupuestos; integración sujeta a gates y revisión.",
       "Cuatro niveles de autonomía; permisos críticos siempre revisados y aprobaciones locales acotadas a política, proyecto, raíz y contenido.",
       "La transferencia portable importa hechos y propuestas, nunca permisos, credenciales ni ejecución activa.",
-      "Los costos/latencias del catálogo son estimaciones declaradas; las lecciones no cambian políticas automáticamente."
+      "Los costos/latencias del catálogo son estimaciones declaradas; las lecciones no cambian políticas automáticamente.",
+      "Nombre del proyecto: PALLAQUINO TEAM. Se conservan identificadores técnicos uasek y universal-ai-software-kit para compatibilidad; los checkpoints y reportes anteriores son históricos.",
+      "UDP edición 1 para PALLAQUINO TEAM: VitePress estable, búsqueda local y contenido derivado desde fuentes públicas permitidas.",
+      "Documentación pública preparada para GitHub Pages sin publicar, hacer push ni modificar configuración remota durante esta entrega.",
+      "No sobrescribir documentación manual: las salidas derivadas tienen manifiesto y hash; memoria, aprobaciones y auditorías locales no se publican.",
+      "Las dependencias del portal se fijan por lockfile y Vite 6.4.4 revisado; no se incorporan al runtime Python."
     ],
     "tasks": [
       {
@@ -121,6 +126,23 @@
         ],
         "created_at": "2026-10-21T21:29:36+00:00",
         "updated_at": "2026-10-21T21:29:36+00:00"
+      },
+      {
+        "id": "T0006",
+        "title": "Universal Documentation Portal y marca PALLAQUINO TEAM",
+        "agent": "tech-lead",
+        "acceptance": "Guías, catálogos, búsqueda, diagramas, build, protección de fuentes y workflows preparados sin publicación; evidencia real y manual.",
+        "depends_on": [],
+        "status": "done",
+        "evidence": [
+          "uasek/documentation.py",
+          "tests/test_documentation.py",
+          "documentation/PORTAL_MANUAL.md",
+          "documentation/content/quality/validation.md",
+          "docs/quality/evidence/udp-validation.json"
+        ],
+        "created_at": "2026-10-21T23:35:33+00:00",
+        "updated_at": "2026-10-21T23:39:05+00:00"
       }
     ],
     "known_issues": [
@@ -166,25 +188,31 @@
       "2026-10-21T14:38:19+00:00 publicación inicial Git preparada por solicitud explícita del propietario.",
       "2026-10-21T21:29:36+00:00 implementada y validada Engineering Intelligence Platform 2.0; 120 pruebas, wheel aislado y ZIP extraído.",
       "2026-10-21T21:29:36+00:00 creada T0005",
-      "2026-10-21T21:29:36+00:00 T0005: done"
+      "2026-10-21T21:29:36+00:00 T0005: done",
+      "2026-10-21T21:33:50+00:00 nombre del proyecto actualizado de UNIVERSAL AI SOFTWARE ENGINEERING KIT a PALLAQUINO TEAM por solicitud del usuario.",
+      "2026-10-21T23:35:33+00:00 implementado UDP y validado: 135 pruebas, build en dos bases, búsqueda, móvil y 71 diagramas en navegador.",
+      "2026-10-21T23:35:33+00:00 creada T0006",
+      "2026-10-21T23:35:33+00:00 T0006: done",
+      "2026-10-21T23:36:28+00:00 T0006: in_progress",
+      "2026-10-21T23:39:05+00:00 cierre UDP con permisos EIP y 137 pruebas; build en dos bases, búsqueda, móvil y 71 diagramas en navegador.",
+      "2026-10-21T23:39:05+00:00 T0006: done"
     ],
     "next_actions": [
-      "Inicializar EIP por proyecto y revisar gates, permisos y catálogo de modelos antes de ejecutar automatizaciones.",
-      "Validar Docker real y ejecutar la matriz CI en Linux/macOS antes de ampliar soporte certificado.",
-      "Configurar adaptadores de despliegue y modelos reales con permisos revisados; no guardar credenciales en el repositorio.",
-      "Exportar contexto universal para cambiar de asistente; revalidar evidencias y permisos en cada receptor."
+      "Revisar el portal local y el manual de administración antes de autorizar publicación.",
+      "Con autorización posterior, publicar cambios al repositorio y configurar Pages/entorno y UDP_PAGES_ENABLED; verificar URL real.",
+      "Ejecutar los workflows en GitHub y completar accesibilidad WCAG y validación Linux/macOS.",
+      "Continuar la validación pendiente de Docker, modelos reales y conectores externos de EIP."
     ],
-    "last_task": "T0005",
+    "last_task": "T0006",
     "files_involved": [
-      "tests/test_eip.py",
-      "docs/platform/PLATFORM.md",
-      "docs/quality/VALIDATION_REPORT.md",
-      "docs/quality/evidence/tests-2.0.0.json",
-      "docs/quality/evidence/installed-wheel-2.0.0.json",
-      "docs/quality/evidence/extracted-zip-2.0.0.json"
+      "uasek/documentation.py",
+      "tests/test_documentation.py",
+      "documentation/PORTAL_MANUAL.md",
+      "documentation/content/quality/validation.md",
+      "docs/quality/evidence/udp-validation.json"
     ],
-    "validated_checkpoint": "CP-20261021T212937015381Z-5c63b6a4",
-    "updated_at": "2026-10-21T21:29:37+00:00"
+    "validated_checkpoint": "CP-20261021T233906311869Z-fe5a4408",
+    "updated_at": "2026-10-21T23:39:06+00:00"
   },
-  "state_sha256": "876641140e4753517719c50baff56963f0b0d550145a1e3cc4e2fbd37932b674"
+  "state_sha256": "73cb4ec0e98831e8d1480208126d922baf870d168312a4cfcad3c797c4312ffd"
 }

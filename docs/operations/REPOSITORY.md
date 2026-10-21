@@ -1,5 +1,7 @@
 # Repositorio y autoría
 
+Nombre del proyecto: **PALLAQUINO TEAM**. El núcleo y sus formatos conservan el identificador UASEK por compatibilidad; el nombre remoto y la carpeta de trabajo existentes se mantienen.
+
 Repositorio: [jylmdev-cyber/pallaquino-team](https://github.com/jylmdev-cyber/pallaquino-team).
 
 Rama de entrega: `main`. La auditoría del remoto anterior a la publicación inicial confirmó ausencia de commits y referencias publicadas. Esta raíz corresponde a UASEK 2.0.0, con Engineering Intelligence Platform; los archivos temporales de preparación no forman parte de la entrega.

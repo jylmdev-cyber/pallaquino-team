@@ -16,7 +16,7 @@ from . import memory, operations, providers, context_format, checkpoints, orches
 
 
 def parser():
-    p = argparse.ArgumentParser(description='UASEK — herramientas operativas de ingeniería asistida por IA.')
+    p = argparse.ArgumentParser(description='PALLAQUINO TEAM — herramientas operativas de ingeniería asistida por IA.')
     p.add_argument('--root', default='.', help='Proyecto objetivo (predeterminado: carpeta actual). Colocar antes del subcomando.')
     p.add_argument('--output', help='Guardar resultado JSON redactado; no sobrescribe archivos existentes.')
     p.add_argument('--verbose', action='store_true')

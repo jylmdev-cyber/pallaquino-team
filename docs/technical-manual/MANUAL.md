@@ -1,4 +1,4 @@
-# Manual técnico
+# Manual técnico — PALLAQUINO TEAM
 
 ## Engineering Intelligence Platform 2.0
 

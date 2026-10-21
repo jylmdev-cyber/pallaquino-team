@@ -1,4 +1,4 @@
-# ENGINEERING INTELLIGENCE PLATFORM — UASEK 2.0
+# ENGINEERING INTELLIGENCE PLATFORM — PALLAQUINO TEAM 2.0
 
 Segunda capa opcional sobre el kit. La CLI continúa siendo universal. El núcleo usa Python estándar y archivos abiertos; no necesita una cuenta de IA, servidor de base de datos ni servicio web. Memoria clásica schema 1 y comandos 1.x se conservan. La plataforma tiene estado/API v1 y un contexto de transferencia propio v1.
 

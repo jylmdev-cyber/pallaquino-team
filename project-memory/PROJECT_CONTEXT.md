@@ -1,4 +1,4 @@
-# UNIVERSAL AI SOFTWARE ENGINEERING KIT
+# PALLAQUINO TEAM
 
 Infraestructura local portable de coordinación y continuidad de ingeniería asistida por IA.
 

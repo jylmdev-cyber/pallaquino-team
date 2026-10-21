@@ -1,4 +1,6 @@
-# Inicio rápido
+# Inicio rápido — PALLAQUINO TEAM
+
+El portal UDP se genera con `python tools/docs_manager.py generate`; después, en `documentation/portal`, ejecutar `npm ci --ignore-scripts` y `npm run dev`. [Manual del portal](documentation/PORTAL_MANUAL.md). Su publicación en Pages permanece deshabilitada por defecto.
 
 Para la segunda capa, consultar [ENGINEERING INTELLIGENCE PLATFORM](docs/platform/PLATFORM.md). La demostración reproducible `python examples/platform/demo.py --destination ../demo-eip --approve-demo` verifica dos trabajos independientes y genera un centro de operaciones local. Una plataforma inicializada añade controles de permisos a los comandos anteriores.
 

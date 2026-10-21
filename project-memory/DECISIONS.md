@@ -13,3 +13,8 @@
 - Cuatro niveles de autonomía; permisos críticos siempre revisados y aprobaciones locales acotadas a política, proyecto, raíz y contenido.
 - La transferencia portable importa hechos y propuestas, nunca permisos, credenciales ni ejecución activa.
 - Los costos/latencias del catálogo son estimaciones declaradas; las lecciones no cambian políticas automáticamente.
+- Nombre del proyecto: PALLAQUINO TEAM. Se conservan identificadores técnicos uasek y universal-ai-software-kit para compatibilidad; los checkpoints y reportes anteriores son históricos.
+- UDP edición 1 para PALLAQUINO TEAM: VitePress estable, búsqueda local y contenido derivado desde fuentes públicas permitidas.
+- Documentación pública preparada para GitHub Pages sin publicar, hacer push ni modificar configuración remota durante esta entrega.
+- No sobrescribir documentación manual: las salidas derivadas tienen manifiesto y hash; memoria, aprobaciones y auditorías locales no se publican.
+- Las dependencias del portal se fijan por lockfile y Vite 6.4.4 revisado; no se incorporan al runtime Python.

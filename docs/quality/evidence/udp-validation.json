@@ -1,0 +1,98 @@
+{
+  "at": "2026-10-21T23:39:05+00:00",
+  "project": "PALLAQUINO TEAM",
+  "software_version": "2.0.0",
+  "portal_edition": 1,
+  "tests": {
+    "ran": 137,
+    "passed": 136,
+    "skipped": 1,
+    "source_fingerprint": "647ec954714316459e5fb70aca505d9d2e822176f8d663971421854833921eed"
+  },
+  "public_catalogs": {
+    "agents": 21,
+    "skills": 31,
+    "examples": 30,
+    "scripts": 19,
+    "modules": 24
+  },
+  "documentation_pages": 217,
+  "project_build": {
+    "valid": true,
+    "html_pages": 218,
+    "local_references_checked": 28082,
+    "base": "/pallaquino-team/",
+    "private_sources_included": false,
+    "deployed": false,
+    "artifact": "documentation/portal/.vitepress/dist",
+    "publication": "Preparado, sin cambios remotos. Habilitación UDP_PAGES_ENABLED y autorización de publicación pendientes."
+  },
+  "root_build": {
+    "valid": true,
+    "html_pages": 217,
+    "local_references_checked": 27952,
+    "base": "/",
+    "private_sources_included": false,
+    "deployed": false,
+    "artifact": "documentation/portal/.vitepress/dist",
+    "publication": "Preparado, sin cambios remotos. Habilitación UDP_PAGES_ENABLED y autorización de publicación pendientes."
+  },
+  "browser": {
+    "passed": true,
+    "url": "http://localhost:4173/pallaquino-team/",
+    "browser": "Chromium/Edge headless",
+    "searchResults": 16,
+    "diagramPages": 37,
+    "diagrams": 71,
+    "checks": [
+      "inicio HTTP",
+      "tema claro/oscuro",
+      "búsqueda local",
+      "Mermaid en todas las páginas",
+      "zoom",
+      "móvil 390px",
+      "menú móvil",
+      "sidebar móvil",
+      "foco de teclado",
+      "sin errores JS o HTTP"
+    ],
+    "accessibility": "Comprobaciones básicas; no certificación WCAG.",
+    "deployed": false
+  },
+  "copy_button": {
+    "passed": true,
+    "button_copy": "Application passes the expected command text to clipboard.writeText",
+    "system_clipboard": "Not read or modified; API boundary intercepted in an isolated browser context"
+  },
+  "npm_audit": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "dependencies": {
+      "prod": 1,
+      "dev": 295,
+      "optional": 54,
+      "peer": 1,
+      "peerOptional": 0,
+      "total": 295
+    }
+  },
+  "workflow_review": {
+    "files": 2,
+    "yaml_parsed": true,
+    "official_actions_pinned_by_sha": true,
+    "pr_cannot_deploy": true,
+    "publication_default": "disabled",
+    "remote_execution_verified": false
+  },
+  "limits": [
+    "No Pages deployment, push or remote changes",
+    "No Linux/macOS CI execution",
+    "Basic accessibility checks, not WCAG certification"
+  ]
+}

@@ -332,7 +332,7 @@ def source_fingerprint(root):
         relative = path.relative_to(root).as_posix()
         if relative == 'PACKAGE_MANIFEST.json' or relative.startswith(('project-memory/', 'ai/handoff/', 'ai/plans/', 'docs/')) or is_sensitive(path):
             continue
-        if path.suffix.lower() not in {'.py', '.js', '.jsx', '.ts', '.tsx', '.json', '.toml', '.yaml', '.yml', '.go', '.rs', '.java', '.cs', '.c', '.h', '.cpp', '.php', '.rb', '.sh', '.ps1', '.sql', '.txt'}:
+        if path.suffix.lower() not in {'.py', '.js', '.mjs', '.cjs', '.jsx', '.ts', '.tsx', '.vue', '.css', '.svg', '.json', '.toml', '.yaml', '.yml', '.go', '.rs', '.java', '.cs', '.c', '.h', '.cpp', '.php', '.rb', '.sh', '.ps1', '.sql', '.txt'}:
             continue
         digest.update(relative.encode('utf-8') + b'\x00')
         with path.open('rb') as stream:

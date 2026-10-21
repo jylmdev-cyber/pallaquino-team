@@ -1,4 +1,4 @@
-# Manual de usuario UASEK
+# Manual de usuario — PALLAQUINO TEAM
 
 ## Segunda capa 2.0
 
@@ -10,7 +10,7 @@ Consulte [contexto universal e importación](../continuity/CONTEXT_FORMAT.md), [
 
 ## 1. Qué es
 
-UASEK proporciona coordinación, estado durable y automatizaciones locales para trabajo con asistentes de IA. El producto resultante de cada proyecto sigue requiriendo requisitos, implementación y validación específicas.
+PALLAQUINO TEAM proporciona coordinación, estado durable y automatizaciones locales para trabajo con asistentes de IA mediante el núcleo UASEK. El producto resultante de cada proyecto sigue requiriendo requisitos, implementación y validación específicas.
 
 ## 2. Cómo funciona
 

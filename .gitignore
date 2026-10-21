@@ -10,3 +10,9 @@ dist/
 !.env.example
 backups/
 generated-projects/
+node_modules/
+documentation/portal/generated/
+documentation/portal/.vitepress/cache/
+documentation/portal/.vitepress/dist/
+documentation/portal/.vitepress/generated.json
+documentation/reports/

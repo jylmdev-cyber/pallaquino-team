@@ -15,6 +15,9 @@ KIT_ROOT = Path(__file__).resolve().parents[1]
 RESOURCE_ROOT = KIT_ROOT if (KIT_ROOT / 'configs/agents.json').exists() else Path(__file__).parent / 'resources'
 IGNORED = {'.git', '.venv', 'venv', 'node_modules', '__pycache__', '.uasek',
            'dist', 'build', 'backups', '.idea', '.pytest_cache'}
+DERIVED_DIRECTORIES = {'documentation/portal/generated', 'documentation/reports',
+                       'documentation/portal/.vitepress/cache'}
+DERIVED_FILES = {'documentation/portal/.vitepress/generated.json'}
 SENSITIVE = {'.env', '.npmrc', '.pypirc', 'credentials.json', 'secrets.json',
              'id_rsa', 'id_ed25519', '.netrc'}
 SECRET_PATTERNS = [
@@ -112,10 +115,13 @@ def files(root):
     root = Path(root).resolve()
     for base, dirs, names in os.walk(root, followlinks=False):
         dirs[:] = sorted(d for d in dirs if d not in IGNORED and not d.endswith('.egg-info')
+                         and Path(base,d).relative_to(root).as_posix() not in DERIVED_DIRECTORIES
                          and not Path(base, d).is_symlink()
                          and not getattr(Path(base, d), 'is_junction', lambda: False)())
         for name in sorted(names):
             path = Path(base, name)
+            if path.relative_to(root).as_posix() in DERIVED_FILES:
+                continue
             if path.is_symlink() or not path.resolve().is_relative_to(root):
                 continue
             yield path

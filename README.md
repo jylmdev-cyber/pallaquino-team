@@ -1,6 +1,17 @@
-# UNIVERSAL AI SOFTWARE ENGINEERING KIT — UASEK 2.0.0
+# PALLAQUINO TEAM — 2.0.0
 
 Infraestructura operativa en español para coordinar ingeniería asistida por IA: tareas con dependencias, contratos de agentes, memoria portable, herramientas de inspección, pruebas, respaldo y continuidad. Núcleo Python sin dependencias externas de ejecución.
+
+**PALLAQUINO TEAM** es el nombre del proyecto. El núcleo conserva los identificadores técnicos `uasek` y `universal-ai-software-kit` para mantener la compatibilidad de comandos, instalación y formatos de memoria.
+
+**UNIVERSAL DOCUMENTATION PORTAL (UDP)** incorpora guías navegables, búsqueda local, catálogos generados, diagramas y tema claro/oscuro. [Administración del portal](documentation/PORTAL_MANUAL.md). Está preparado para GitHub Pages con publicación deshabilitada hasta autorización.
+
+```console
+python tools/docs_manager.py generate
+cd documentation/portal
+npm ci --ignore-scripts
+npm run dev
+```
 
 **ENGINEERING INTELLIGENCE PLATFORM** añade PROJECT BRAIN, trabajos paralelos con reservas de archivos, cuatro niveles de autonomía, quality gates obligatorios, recuperación, selección de modelos, extensiones revisadas, gestión multiproyecto y centro de operaciones HTML opcional. [Manual de plataforma y límites](docs/platform/PLATFORM.md).
 
@@ -32,7 +43,7 @@ python kit.py test
 ## Contenido
 
 - 21 perfiles con contratos completos en [configs/agents.json](configs/agents.json).
-- 31 skills operativas en `skills/`, 16 entradas `tools/*.py` y un CLI central.
+- 31 skills operativas en `skills/`, 16 entradas de compatibilidad `tools/*.py`, el administrador UDP `tools/docs_manager.py` y un CLI central.
 - 30 referencias por industria consultables con `catalog` y seleccionables con `init --template`.
 - PROJECT MEMORY JSON y vistas Markdown; exportación de diez secciones y cambio de proveedor.
 - Auditoría Git autorizada, escaneo heurístico, consulta OSV opcional y comprobación de registros PyPI/npm.
